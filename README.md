@@ -34,6 +34,7 @@ The dataset provides the following **variant combinations**:
 
 **Note:**  
 The benchmark is designed to be **flexible and application-driven**, meaning users are not expected to evaluate all instances. Instead, it is recommended to select subsets of instances that best match the target real-world scenario (e.g., problem size, demand structure, and city topology).
+Travel times are generated using OpenStreetMap data combined with a commercial routing API. More accurate travel-time estimation may require access to commercial traffic data sources.
 
 
 # Cities Included in the Dataset

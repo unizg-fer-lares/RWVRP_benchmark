@@ -40,8 +40,10 @@ FILES = {
     "time_matrix_osm": "time_matrix_osm.json",
     "time_matrix_centroids": "time_matrix_centroids.json",
     "time_matrix_centroids_INCOMPLETE": "time_matrix_centroids_INCOMPLETE.json",
+    "time_matrix_centroids_scaled": "time_matrix_centroids_scaled.json",
     "time_matrix_within_clusters": "time_matrix_within_clusters.json",
     "time_matrix_within_clusters_INCOMPLETE": "time_matrix_within_clusters_INCOMPLETE.json",
+    "time_matrix_within_clusters_scaled": "time_matrix_within_clusters_scaled.json",
     "time_matrix_tdvrp": "time_matrix_tdvrp.json",
     "time_matrix_static": "time_matrix.json",
 }

@@ -64,8 +64,8 @@ def generate_full_tdvrp_time_matrix(city):
     city_dir = os.path.join(DATA_PATH, city)
     dataset_path = os.path.join(city_dir, TMP_DIR, FILES["locations_with_clusters"])
     static_matrix_path = os.path.join(city_dir, TMP_DIR, FILES["time_matrix_osm"])
-    centroid_tt_path = os.path.join(city_dir, TMP_DIR, FILES["time_matrix_centroids"])
-    within_tt_path = os.path.join(city_dir, TMP_DIR, FILES["time_matrix_within_clusters"])
+    centroid_tt_path = os.path.join(city_dir, TMP_DIR, FILES["time_matrix_centroids_scaled"])
+    within_tt_path = os.path.join(city_dir, TMP_DIR, FILES["time_matrix_within_clusters_scaled"])
     rep_points_path = os.path.join(city_dir, TMP_DIR, FILES["representative_points"])
     output_path = os.path.join(city_dir, FILES["time_matrix_tdvrp"])
 

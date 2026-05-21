@@ -262,8 +262,10 @@ def _scale_matrix(matrix, baseline):
 
 
 def scale_original_td_matrices(city):
-    CENTROIDS_FILE = os.path.join(DATA_PATH, city, "tmp", "time_matrix_centroids.json")
-    WITHIN_FILE = os.path.join(DATA_PATH, city, "tmp", "time_matrix_within_clusters.json")
+    CENTROIDS_FILE = os.path.join(DATA_PATH, city, TMP_DIR, FILES["time_matrix_centroids"])
+    WITHIN_FILE = os.path.join(DATA_PATH, city, TMP_DIR, FILES["time_matrix_within_clusters"])
+    CENTROIDS_FILE_SCALED = os.path.join(DATA_PATH, city, TMP_DIR, FILES["time_matrix_centroids_scaled"])
+    WITHIN_FILE_SCALED = os.path.join(DATA_PATH, city, TMP_DIR, FILES["time_matrix_within_clusters_scaled"])
 
     # =========================
     # CENTROIDS SCALE
@@ -275,10 +277,9 @@ def scale_original_td_matrices(city):
     for t in scaled_centroids:
         scaled_centroids[t]["matrix_seconds"] = _scale_matrix(scaled_centroids[t]["matrix_seconds"], baseline)
 
-    out_centroids = CENTROIDS_FILE.replace(".json", "_scaled.json")
-    with open(out_centroids, "w", encoding="utf-8") as f:
+    with open(CENTROIDS_FILE_SCALED, "w", encoding="utf-8") as f:
         json.dump(scaled_centroids, f, indent=2)
-    print("Saved:", out_centroids)
+    print("Saved:", CENTROIDS_FILE_SCALED)
 
     # =========================
     # WITHIN CLUSTERS SCALE
@@ -291,7 +292,6 @@ def scale_original_td_matrices(city):
         for c in scaled_within[t]:
             scaled_within[t][c]["matrix_seconds"] = _scale_matrix(scaled_within[t][c]["matrix_seconds"], baseline_clusters[c]["matrix_seconds"])
 
-    out_within = WITHIN_FILE.replace(".json", "_scaled.json")
-    with open(out_within, "w", encoding="utf-8") as f:
+    with open(WITHIN_FILE_SCALED, "w", encoding="utf-8") as f:
         json.dump(scaled_within, f, indent=2)
-    print("Saved:", out_within)
+    print("Saved:", WITHIN_FILE_SCALED)
