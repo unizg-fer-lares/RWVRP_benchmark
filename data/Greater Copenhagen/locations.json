@@ -1,0 +1,1663 @@
+[
+  {
+    "x_coor": 12.42,
+    "y_coor": 55.657,
+    "demand": 0,
+    "location_type": "depot",
+    "time_window": [
+      18000,
+      43200
+    ],
+    "service_time": 1800
+  },
+  {
+    "x_coor": 12.5727309,
+    "y_coor": 55.6601982,
+    "demand": 10.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1500
+  },
+  {
+    "x_coor": 12.5851162,
+    "y_coor": 55.7029382,
+    "demand": 4.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 780
+  },
+  {
+    "x_coor": 12.5931249,
+    "y_coor": 55.6725713,
+    "demand": 9.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1440
+  },
+  {
+    "x_coor": 12.5673408,
+    "y_coor": 55.6752949,
+    "demand": 7.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1200
+  },
+  {
+    "x_coor": 12.5734576,
+    "y_coor": 55.6197703,
+    "demand": 7.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1140
+  },
+  {
+    "x_coor": 12.5142782,
+    "y_coor": 55.660996,
+    "demand": 5.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 960
+  },
+  {
+    "x_coor": 12.3329315,
+    "y_coor": 55.6612188,
+    "demand": 11.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1680
+  },
+  {
+    "x_coor": 12.538426,
+    "y_coor": 55.7012667,
+    "demand": 10.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1560
+  },
+  {
+    "x_coor": 12.5568466,
+    "y_coor": 55.6854075,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.5560932,
+    "y_coor": 55.689451,
+    "demand": 8.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1260
+  },
+  {
+    "x_coor": 12.4221215,
+    "y_coor": 55.621653,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.5553973,
+    "y_coor": 55.6724767,
+    "demand": 6.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1080
+  },
+  {
+    "x_coor": 13.0275984,
+    "y_coor": 55.5906388,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.5824977,
+    "y_coor": 55.6800936,
+    "demand": 4.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 780
+  },
+  {
+    "x_coor": 12.6229628,
+    "y_coor": 55.6639738,
+    "demand": 4.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 840
+  },
+  {
+    "x_coor": 12.4761277,
+    "y_coor": 55.6481019,
+    "demand": 4.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 780
+  },
+  {
+    "x_coor": 12.5055762,
+    "y_coor": 55.7686975,
+    "demand": 14.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1980
+  },
+  {
+    "x_coor": 12.5754809,
+    "y_coor": 55.6982993,
+    "demand": 4.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 840
+  },
+  {
+    "x_coor": 12.3738595,
+    "y_coor": 55.7842387,
+    "demand": 7.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1140
+  },
+  {
+    "x_coor": 12.5973111,
+    "y_coor": 55.7073855,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 13.0199935,
+    "y_coor": 55.592334,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 12.5859532,
+    "y_coor": 55.603376,
+    "demand": 5.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 960
+  },
+  {
+    "x_coor": 12.5803833,
+    "y_coor": 55.7073925,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 12.5010644,
+    "y_coor": 55.6712428,
+    "demand": 6.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1020
+  },
+  {
+    "x_coor": 12.483717,
+    "y_coor": 55.6268313,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.4599776,
+    "y_coor": 55.7006903,
+    "demand": 9.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1380
+  },
+  {
+    "x_coor": 12.3887549,
+    "y_coor": 55.624395,
+    "demand": 4.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 780
+  },
+  {
+    "x_coor": 12.4889594,
+    "y_coor": 55.7658686,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 12.4821596,
+    "y_coor": 55.6916158,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 12.5383941,
+    "y_coor": 55.7071865,
+    "demand": 6.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1020
+  },
+  {
+    "x_coor": 12.6319804,
+    "y_coor": 55.6610806,
+    "demand": 4.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 840
+  },
+  {
+    "x_coor": 12.4813981,
+    "y_coor": 55.6280994,
+    "demand": 5.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 960
+  },
+  {
+    "x_coor": 12.4677117,
+    "y_coor": 55.6723913,
+    "demand": 4.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 780
+  },
+  {
+    "x_coor": 12.5537181,
+    "y_coor": 55.6988848,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 12.4338648,
+    "y_coor": 55.675762,
+    "demand": 7.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1200
+  },
+  {
+    "x_coor": 12.5661095,
+    "y_coor": 55.6570727,
+    "demand": 2.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 600
+  },
+  {
+    "x_coor": 12.517567,
+    "y_coor": 55.6528512,
+    "demand": 5.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 960
+  },
+  {
+    "x_coor": 12.6070529,
+    "y_coor": 55.6585785,
+    "demand": 8.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1320
+  },
+  {
+    "x_coor": 12.4836586,
+    "y_coor": 55.6824589,
+    "demand": 5.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 960
+  },
+  {
+    "x_coor": 12.543338,
+    "y_coor": 55.6687623,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 13.0078761,
+    "y_coor": 55.6062325,
+    "demand": 7.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1200
+  },
+  {
+    "x_coor": 12.5971912,
+    "y_coor": 55.6752064,
+    "demand": 7.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1200
+  },
+  {
+    "x_coor": 12.5862272,
+    "y_coor": 55.6846879,
+    "demand": 9.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1440
+  },
+  {
+    "x_coor": 12.305282,
+    "y_coor": 55.7328176,
+    "demand": 13.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1860
+  },
+  {
+    "x_coor": 12.55631,
+    "y_coor": 55.71783,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 12.565341,
+    "y_coor": 55.6562252,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.5396904,
+    "y_coor": 55.6852065,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 12.5599029,
+    "y_coor": 55.6616576,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 13.2151317,
+    "y_coor": 55.7097522,
+    "demand": 4.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 840
+  },
+  {
+    "x_coor": 12.9838179,
+    "y_coor": 55.6156836,
+    "demand": 12.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1800
+  },
+  {
+    "x_coor": 12.5183937,
+    "y_coor": 55.7502299,
+    "demand": 6.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1080
+  },
+  {
+    "x_coor": 12.560002,
+    "y_coor": 55.7136668,
+    "demand": 6.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1080
+  },
+  {
+    "x_coor": 12.5776515,
+    "y_coor": 55.7014643,
+    "demand": 7.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1200
+  },
+  {
+    "x_coor": 12.6143883,
+    "y_coor": 55.6469241,
+    "demand": 6.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1080
+  },
+  {
+    "x_coor": 12.580561,
+    "y_coor": 55.6306886,
+    "demand": 10.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1500
+  },
+  {
+    "x_coor": 13.0064731,
+    "y_coor": 55.5863816,
+    "demand": 4.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 780
+  },
+  {
+    "x_coor": 12.3682804,
+    "y_coor": 55.7822503,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.5374104,
+    "y_coor": 55.6638788,
+    "demand": 4.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 780
+  },
+  {
+    "x_coor": 12.5927178,
+    "y_coor": 55.6874817,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.5472998,
+    "y_coor": 55.6697942,
+    "demand": 12.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1800
+  },
+  {
+    "x_coor": 12.5896296,
+    "y_coor": 55.6560826,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 12.3757002,
+    "y_coor": 55.7830889,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 13.0462381,
+    "y_coor": 55.5864265,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 12.5945781,
+    "y_coor": 55.7869462,
+    "demand": 14.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1980
+  },
+  {
+    "x_coor": 12.5323765,
+    "y_coor": 55.6818426,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.5182884,
+    "y_coor": 55.7514688,
+    "demand": 4.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 780
+  },
+  {
+    "x_coor": 12.5619689,
+    "y_coor": 55.6773937,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.5158229,
+    "y_coor": 55.7337161,
+    "demand": 7.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1140
+  },
+  {
+    "x_coor": 12.5215089,
+    "y_coor": 55.7756451,
+    "demand": 4.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 840
+  },
+  {
+    "x_coor": 13.2426153,
+    "y_coor": 55.6945284,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.505754,
+    "y_coor": 55.7051799,
+    "demand": 8.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1320
+  },
+  {
+    "x_coor": 12.5747452,
+    "y_coor": 55.6978913,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.6184643,
+    "y_coor": 55.637207,
+    "demand": 2.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 600
+  },
+  {
+    "x_coor": 12.396336,
+    "y_coor": 55.6549714,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 12.5616054,
+    "y_coor": 55.7098215,
+    "demand": 12.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1800
+  },
+  {
+    "x_coor": 12.4159943,
+    "y_coor": 55.6670604,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 12.9876603,
+    "y_coor": 55.6079692,
+    "demand": 5.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 960
+  },
+  {
+    "x_coor": 12.3908394,
+    "y_coor": 55.7006357,
+    "demand": 9.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1380
+  },
+  {
+    "x_coor": 12.5623171,
+    "y_coor": 55.7119788,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 12.4544911,
+    "y_coor": 55.7600747,
+    "demand": 8.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1260
+  },
+  {
+    "x_coor": 12.576331,
+    "y_coor": 55.691291,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 13.005696,
+    "y_coor": 55.597741,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 12.6602389,
+    "y_coor": 55.5954284,
+    "demand": 10.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1500
+  },
+  {
+    "x_coor": 12.4302425,
+    "y_coor": 55.6584626,
+    "demand": 6.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1080
+  },
+  {
+    "x_coor": 13.1121289,
+    "y_coor": 55.6537847,
+    "demand": 4.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 840
+  },
+  {
+    "x_coor": 12.5468164,
+    "y_coor": 55.655436,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 12.4826724,
+    "y_coor": 55.7810251,
+    "demand": 6.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1020
+  },
+  {
+    "x_coor": 13.0892851,
+    "y_coor": 55.6413425,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 12.4706777,
+    "y_coor": 55.7125101,
+    "demand": 7.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1140
+  },
+  {
+    "x_coor": 12.6093214,
+    "y_coor": 55.6557841,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 12.5762685,
+    "y_coor": 55.7619251,
+    "demand": 5.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 900
+  },
+  {
+    "x_coor": 12.3544822,
+    "y_coor": 55.6753649,
+    "demand": 4.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 840
+  },
+  {
+    "x_coor": 12.52648,
+    "y_coor": 55.6882384,
+    "demand": 4.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 840
+  },
+  {
+    "x_coor": 12.3057925,
+    "y_coor": 55.7327803,
+    "demand": 5.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 960
+  },
+  {
+    "x_coor": 12.5759249,
+    "y_coor": 55.7090723,
+    "demand": 3.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 720
+  },
+  {
+    "x_coor": 12.4213949,
+    "y_coor": 55.6221192,
+    "demand": 4.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 780
+  },
+  {
+    "x_coor": 12.5900203,
+    "y_coor": 55.7059331,
+    "demand": 3.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 660
+  },
+  {
+    "x_coor": 12.6072789,
+    "y_coor": 55.6684961,
+    "demand": 8.0,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1260
+  },
+  {
+    "x_coor": 12.3961609,
+    "y_coor": 55.6551733,
+    "demand": 6.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 1080
+  },
+  {
+    "x_coor": 13.1643471,
+    "y_coor": 55.7168824,
+    "demand": 4.5,
+    "location_type": "supermarket",
+    "time_window": [
+      19800,
+      39600
+    ],
+    "service_time": 840
+  },
+  {
+    "x_coor": 12.537903,
+    "y_coor": 55.651668,
+    "demand": 2.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 525
+  },
+  {
+    "x_coor": 12.5521617,
+    "y_coor": 55.6857187,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 13.008522,
+    "y_coor": 55.5954494,
+    "demand": 2.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 525
+  },
+  {
+    "x_coor": 12.5608344,
+    "y_coor": 55.6643762,
+    "demand": 2.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 480
+  },
+  {
+    "x_coor": 12.4367609,
+    "y_coor": 55.7118744,
+    "demand": 1.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 435
+  },
+  {
+    "x_coor": 12.5638903,
+    "y_coor": 55.6718378,
+    "demand": 1.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 435
+  },
+  {
+    "x_coor": 13.0086508,
+    "y_coor": 55.5805678,
+    "demand": 3.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 570
+  },
+  {
+    "x_coor": 12.4588991,
+    "y_coor": 55.6649613,
+    "demand": 2.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 525
+  },
+  {
+    "x_coor": 12.5637467,
+    "y_coor": 55.672035,
+    "demand": 0.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 345
+  },
+  {
+    "x_coor": 12.5596353,
+    "y_coor": 55.6903716,
+    "demand": 2.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 480
+  },
+  {
+    "x_coor": 12.5023847,
+    "y_coor": 55.6521906,
+    "demand": 0.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 345
+  },
+  {
+    "x_coor": 12.5600287,
+    "y_coor": 55.6711574,
+    "demand": 1.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 435
+  },
+  {
+    "x_coor": 12.5857738,
+    "y_coor": 55.7081014,
+    "demand": 0.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 345
+  },
+  {
+    "x_coor": 12.5451263,
+    "y_coor": 55.6693503,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 13.0090277,
+    "y_coor": 55.5918212,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.4581473,
+    "y_coor": 55.695854,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 13.0060183,
+    "y_coor": 55.5935709,
+    "demand": 3.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 615
+  },
+  {
+    "x_coor": 12.5633542,
+    "y_coor": 55.67246,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.540164,
+    "y_coor": 55.670064,
+    "demand": 1.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 435
+  },
+  {
+    "x_coor": 12.5571157,
+    "y_coor": 55.6689489,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.606316,
+    "y_coor": 55.659092,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.5441642,
+    "y_coor": 55.7006063,
+    "demand": 1.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 435
+  },
+  {
+    "x_coor": 12.6019836,
+    "y_coor": 55.6737927,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.6157396,
+    "y_coor": 55.6671042,
+    "demand": 1.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 435
+  },
+  {
+    "x_coor": 13.1188178,
+    "y_coor": 55.7905425,
+    "demand": 0.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 345
+  },
+  {
+    "x_coor": 12.5426035,
+    "y_coor": 55.6641007,
+    "demand": 2.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 480
+  },
+  {
+    "x_coor": 12.5700512,
+    "y_coor": 55.6176869,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.487813,
+    "y_coor": 55.717206,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.616737,
+    "y_coor": 55.6423765,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.5333732,
+    "y_coor": 55.6796711,
+    "demand": 1.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 435
+  },
+  {
+    "x_coor": 13.0849992,
+    "y_coor": 55.6399355,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.5746651,
+    "y_coor": 55.6821656,
+    "demand": 1.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 435
+  },
+  {
+    "x_coor": 12.510789,
+    "y_coor": 55.7054683,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 13.0252656,
+    "y_coor": 55.5777587,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.9844414,
+    "y_coor": 55.5714356,
+    "demand": 2.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 480
+  },
+  {
+    "x_coor": 12.5857711,
+    "y_coor": 55.7063011,
+    "demand": 0.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 345
+  },
+  {
+    "x_coor": 12.565079,
+    "y_coor": 55.755956,
+    "demand": 1.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 435
+  },
+  {
+    "x_coor": 12.4519338,
+    "y_coor": 55.6814136,
+    "demand": 2.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 480
+  },
+  {
+    "x_coor": 12.5622448,
+    "y_coor": 55.6752437,
+    "demand": 1.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 435
+  },
+  {
+    "x_coor": 12.6502843,
+    "y_coor": 55.6286579,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.9766885,
+    "y_coor": 55.596793,
+    "demand": 2.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 480
+  },
+  {
+    "x_coor": 12.4987844,
+    "y_coor": 55.6856977,
+    "demand": 2.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 480
+  },
+  {
+    "x_coor": 12.6172929,
+    "y_coor": 55.6776252,
+    "demand": 2.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 525
+  },
+  {
+    "x_coor": 13.0195016,
+    "y_coor": 55.5926558,
+    "demand": 3.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 570
+  },
+  {
+    "x_coor": 12.5798392,
+    "y_coor": 55.7635834,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.6085914,
+    "y_coor": 55.6653907,
+    "demand": 0.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 345
+  },
+  {
+    "x_coor": 12.6192478,
+    "y_coor": 55.6539367,
+    "demand": 0.5,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 345
+  },
+  {
+    "x_coor": 12.511199,
+    "y_coor": 55.763547,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.5485471,
+    "y_coor": 55.680513,
+    "demand": 1.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 390
+  },
+  {
+    "x_coor": 12.5495083,
+    "y_coor": 55.6724277,
+    "demand": 3.0,
+    "location_type": "convenience",
+    "time_window": [
+      19800,
+      37800
+    ],
+    "service_time": 570
+  }
+]

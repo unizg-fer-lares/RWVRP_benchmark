@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "capacity": 8
+  },
+  {
+    "id": 1,
+    "capacity": 8
+  },
+  {
+    "id": 2,
+    "capacity": 18
+  },
+  {
+    "id": 3,
+    "capacity": 18
+  },
+  {
+    "id": 4,
+    "capacity": 26
+  },
+  {
+    "id": 5,
+    "capacity": 8
+  },
+  {
+    "id": 6,
+    "capacity": 8
+  },
+  {
+    "id": 7,
+    "capacity": 18
+  },
+  {
+    "id": 8,
+    "capacity": 18
+  },
+  {
+    "id": 9,
+    "capacity": 26
+  },
+  {
+    "id": 10,
+    "capacity": 8
+  },
+  {
+    "id": 11,
+    "capacity": 8
+  }
+]

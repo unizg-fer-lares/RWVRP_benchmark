@@ -1,0 +1,72 @@
+[
+  {
+    "cluster_id": 4,
+    "x_rep": 7.092,
+    "y_rep": 51.439,
+    "n_points": 15,
+    "location_type": "depot"
+  },
+  {
+    "cluster_id": 9,
+    "x_rep": 6.8538409,
+    "y_rep": 51.4708234,
+    "n_points": 8,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 8,
+    "x_rep": 6.9892023,
+    "y_rep": 51.4407141,
+    "n_points": 15,
+    "location_type": "supermarket"
+  },
+  {
+    "cluster_id": 1,
+    "x_rep": 6.7538633,
+    "y_rep": 51.4172169,
+    "n_points": 18,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 2,
+    "x_rep": 6.9432315,
+    "y_rep": 51.5337467,
+    "n_points": 8,
+    "location_type": "supermarket"
+  },
+  {
+    "cluster_id": 0,
+    "x_rep": 7.3352128,
+    "y_rep": 51.5420379,
+    "n_points": 7,
+    "location_type": "supermarket"
+  },
+  {
+    "cluster_id": 7,
+    "x_rep": 7.1822272,
+    "y_rep": 51.5125763,
+    "n_points": 17,
+    "location_type": "supermarket"
+  },
+  {
+    "cluster_id": 6,
+    "x_rep": 7.3293377,
+    "y_rep": 51.4373356,
+    "n_points": 8,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 3,
+    "x_rep": 7.4630304,
+    "y_rep": 51.3764994,
+    "n_points": 11,
+    "location_type": "supermarket"
+  },
+  {
+    "cluster_id": 5,
+    "x_rep": 7.4828163,
+    "y_rep": 51.527318,
+    "n_points": 14,
+    "location_type": "convenience"
+  }
+]

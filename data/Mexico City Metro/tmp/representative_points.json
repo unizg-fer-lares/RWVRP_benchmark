@@ -1,0 +1,100 @@
+[
+  {
+    "cluster_id": 5,
+    "x_rep": -99.1336621,
+    "y_rep": 19.4570187,
+    "n_points": 99,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 1,
+    "x_rep": -99.1505034,
+    "y_rep": 19.3654026,
+    "n_points": 101,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 10,
+    "x_rep": -99.1749672,
+    "y_rep": 19.4206804,
+    "n_points": 97,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 4,
+    "x_rep": -99.2704909,
+    "y_rep": 19.4012555,
+    "n_points": 41,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 11,
+    "x_rep": -99.081774,
+    "y_rep": 19.4108562,
+    "n_points": 52,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 6,
+    "x_rep": -99.2348504,
+    "y_rep": 19.5193272,
+    "n_points": 48,
+    "location_type": "supermarket"
+  },
+  {
+    "cluster_id": 9,
+    "x_rep": -99.1558759,
+    "y_rep": 19.295069,
+    "n_points": 65,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 7,
+    "x_rep": -98.9616314,
+    "y_rep": 19.3816675,
+    "n_points": 26,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 2,
+    "x_rep": -99.1494085,
+    "y_rep": 19.5301669,
+    "n_points": 93,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 13,
+    "x_rep": -99.0735404,
+    "y_rep": 19.5490713,
+    "n_points": 23,
+    "location_type": "supermarket"
+  },
+  {
+    "cluster_id": 8,
+    "x_rep": -99.0384462,
+    "y_rep": 19.640434,
+    "n_points": 35,
+    "location_type": "supermarket"
+  },
+  {
+    "cluster_id": 3,
+    "x_rep": -99.0745144,
+    "y_rep": 19.3133965,
+    "n_points": 57,
+    "location_type": "supermarket"
+  },
+  {
+    "cluster_id": 12,
+    "x_rep": -99.2236188,
+    "y_rep": 19.3249302,
+    "n_points": 41,
+    "location_type": "convenience"
+  },
+  {
+    "cluster_id": 0,
+    "x_rep": -98.957881,
+    "y_rep": 19.5896144,
+    "n_points": 23,
+    "location_type": "convenience"
+  }
+]
