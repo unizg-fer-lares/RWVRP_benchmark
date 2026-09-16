@@ -12,8 +12,8 @@ Contributors are encouraged to extend the benchmark to other applications, such 
 
 # Benchmark Overview
 
-The benchmark currently contains **80 instances**  
-(16 cities × 5 variant combinations), with plans for future expansion.
+The benchmark currently contains **144 instances**  
+(16 cities × 9 variant combinations).
 
 Supported **Vehicle Routing Problem variants** include:
 
@@ -22,7 +22,10 @@ Supported **Vehicle Routing Problem variants** include:
 - **AVRP** – Asymmetric Vehicle Routing Problem  
 - **HVRP** – Heterogeneous Vehicle Routing Problem  
 - **MTVRP** – Multi-Trip Vehicle Routing Problem  
-- **TDVRP** – Time-Dependent Vehicle Routing Problem  
+- **TDVRP** – Time-Dependent Vehicle Routing Problem 
+- **SiDVRP** – Site-Dependent Vehicle Routing Problem
+- **SDVRP** – Split Delivery Vehicle Routing Problem
+- **VRPDB** – Vehicle Routing Problem with Driver Breaks
 
 The dataset provides the following **variant combinations**:
 
@@ -31,9 +34,13 @@ The dataset provides the following **variant combinations**:
 3. CVRP + VRPTW + AVRP + MTVRP
 4. CVRP + VRPTW + AVRP + TDVRP
 5. CVRP + VRPTW + AVRP + HVRP + MTVRP + TDVRP
+6. CVRP + VRPTW + AVRP + HVRP + SiDVRP
+7. CVRP + VRPTW + AVRP + SDVRP
+8. CVRP + VRPTW + AVRP + MTVRP + VRPDB
+9. CVRP + VRPTW + AVRP + HVRP + MTVRP + TDVRP + SiDVRP + SDVRP + VRPDB
 
 **Note:**  
-The benchmark is designed to be **flexible and application-driven**, meaning users are not expected to evaluate all instances. Instead, it is recommended to select subsets of instances that best match the target real-world scenario (e.g., problem size, demand structure, and city topology).
+The benchmark is designed to be **flexible and application-driven**, meaning users are not expected to evaluate all instances. Instead, it is recommended to select subsets of instances that best match the target real-world scenario (e.g., problem size, demand structure, and city topology). Some variants require other variants to be present (SiDVRP requires HVRP, VRPDB requires MTVRP).
 Travel times are generated using OpenStreetMap data combined with a commercial routing API. More accurate travel-time estimation may require access to commercial traffic data sources.
 
 
@@ -87,9 +94,12 @@ Examples:
 - **RW-LO1000-VRP**  
   Real-world London instance with 1000 delivery points for the base variant (CVRP + VRPTW + AVRP)
 - **RW-LO1000-HVRP**  
-  Same instance with heterogeneous vehicle constraints
+  Instance including HVRP (and 3 basic) constraints
 - **RW-LO1000-HMTTDVRP**  
-  Instance including HVRP + MTVRP + TDVRP constraints
+  Instance including HVRP + MTVRP + TDVRP (and 3 basic) constraints
+- **RW-LO1000-RWVRP**
+  Instance including all 9 variants (Real-World VRP)
+The abbreviations are ordered according to the following sequence: HVRP, MTVRP, TDVRP, SiDVRP, SDVRP, VRPDB.
 
 This naming convention ensures consistency and comparability across different research works.
 
@@ -98,28 +108,45 @@ This naming convention ensures consistency and comparability across different re
 
 The repository is divided into two main folders:
 
-- **src/** – contains the code used for dataset generation  
-- **data/** – contains all generated files, organized into 16 city folders  
+- **src/** – contains the code used for dataset generation
 
-Within the `src/` folder are scripts for dataset generation. Files required to define VRP instances are located directly in the city folders (`data/<city>/`).
+- **data/** – contains all generated files, organized into 16 city folders
+
+Within the src/ folder are scripts for dataset generation. Files required to define VRP instances are located directly in the city folders (data/<city>/).
+
+Each city folder contains:
+- data/<city>/locations.json – location data used for all VRP variants
+- data/<city>/vehicles.json – vehicle data used for non-HVRP variants
+- data/<city>/vehicle_location_accessibility.json – vehicle-to-location accessibility matrix used for SiDVRP
+- data/<city>/time_matrix.json – static time matrix for non-TDVRP variants
+- data/<city>/time_matrix_hvrp_8_palets.json – static time matrix for HVRP vehicles with 8-pallet capacity
+- data/<city>/time_matrix_hvrp_18_palets.json – static time matrix for HVRP vehicles with 18-pallet capacity
+- data/<city>/time_matrix_hvrp_26_palets.json – static time matrix for HVRP vehicles with 26-pallet capacity
+- data/<city>/time_matrix_tdvrp.json – time-dependent matrix for TDVRP variants
+- data/<city>/time_matrix_tdvrp_hvrp_8_palets.json – time-dependent matrix for TDVRP + HVRP variants with 8-pallet capacity
+- data/<city>/time_matrix_tdvrp_hvrp_18_palets.json – time-dependent matrix for TDVRP + HVRP variants with 18-pallet capacity
+- data/<city>/time_matrix_tdvrp_hvrp_26_palets.json – time-dependent matrix for TDVRP + HVRP variants with 26-pallet capacity
 
 Additional files include:
-- `data/<city>/src/` – auxiliary files used during dataset generation  
-- `data/<city>/maps/` – plots used for validation and visualization  
-- `data/<city>/solutions/` – stored solutions  
-- `data/<city>/tests/` – additional test files  
+
+- data/<city>/maps/ – plots used for validation and visualization
+- data/<city>/solutions/ – stored solutions
+- data/<city>/tests/ – additional test files
+- data/<city>/tmp/ – temporary files
 
 
 # How to use
 
-1) If you are using **TDVRP variants**, before running your algorithm, you need to generate the time-dependent matrix using the generate_full_tdvrp_time_matrix() function to generate "data/<city>/time_matrix_tdvrp.json" file. These files are excluded from repo due to their size.
+1) To reproduce the dataset, run `main.py` in its current state (you need to run `generate_full_tdvrp_time_matrix(city)`, `convert_3d_to_static(city)` and `generate_heterogeneous_matrices(city)`). These functions generate all the required time matrices for different variants.
 
 2) Load the required files depending on your VRP variant:
-data/<city>/locations.json – used for all VRP variants
-data/<city>/vehicles.json – used if HVRP is not included
-data/<city>/vehicles_hvrp.json – used if HVRP is included
-data/<city>/time_matrix.json – static time matrix (non-TDVRP)
-data/<city>/time_matrix_tdvrp.json – time-dependent matrix (TDVRP)
+`data/<city>/locations.json` – used for all VRP variants; SDVRP-specific demand and service time parameters are included when applicable
+`data/<city>/vehicles.json` – used for all VRP variants; HVRP-specific vehicle capacity and VRPDB-specific driver parameters are included when applicable
+`data/<city>/vehicle_location_accessibility.json` – used for SiDVRP variants
+`data/<city>/time_matrix.json` – static time matrix for non-TDVRP, non-HVRP variants
+`data/<city>/time_matrix_hvrp_<capacity>_palets.json` – static time matrix for HVRP variants
+`data/<city>/time_matrix_tdvrp.json` – time-dependent matrix for TDVRP variants
+`data/<city>/time_matrix_tdvrp_hvrp_<capacity>_palets.json` – time-dependent matrix for TDVRP + HVRP variants
 
 3) Generate a solution using your VRP algorithm and compare it with the best-known solution for the given instance.
 
@@ -127,6 +154,5 @@ data/<city>/time_matrix_tdvrp.json – time-dependent matrix (TDVRP)
 # Future work
 
 The authors of this benchmark plan to include a solution evaluator that will:
-- Verify solution feasibility
+- Add solution validator for all instances
 - Store the best-known solutions
-- Extend the number of variants

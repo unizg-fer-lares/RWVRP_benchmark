@@ -2,3 +2,8 @@ osmnx==2.1.0
 folium==0.20.0
 scipy==1.17.1
 scikit-learn==1.8.0
+numpy==2.4.4
+shapely==2.1.2
+networkx==3.6.1
+matplotlib==3.10.9
+requests==2.34.0

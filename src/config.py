@@ -6,6 +6,7 @@
 
 DATA_PATH = "data"
 TMP_DIR = "tmp"
+MAPS_DIR = "maps"
 
 
 # ------------------------------------------------------------------
@@ -33,10 +34,13 @@ TIME_MATRIX = {
 
 FILES = {
     "locations": "locations.json",
+    "locations_sdvrp": "locations_sdvrp.json",
+    "all_available_locations": "all_available_locations.json",
     "locations_with_clusters": "locations_with_clusters.json",
     "representative_points": "representative_points.json",  # delivery points nearest to cluster centroids 
     "vehicles": "vehicles.json",
     "vehicles_hvrp": "vehicles_hvrp.json",
+    "osm_correction_factor": "osm_correction_factor.json",
     "time_matrix_osm": "time_matrix_osm.json",
     "time_matrix_centroids": "time_matrix_centroids.json",
     "time_matrix_centroids_INCOMPLETE": "time_matrix_centroids_INCOMPLETE.json",

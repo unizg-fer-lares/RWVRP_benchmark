@@ -1,134 +1,354 @@
 [
   {
     "id": 0,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 1,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 2,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 3,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 4,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 5,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 6,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 7,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 8,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 9,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 10,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 11,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 12,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 13,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 14,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 15,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 16,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 17,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 18,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 19,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 20,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 21,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 22,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 23,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 24,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 25,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 26,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 27,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 28,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 29,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 30,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   },
   {
     "id": 31,
-    "capacity": 18
-  },
-  {
-    "id": 32,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      63000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 480
   }
 ]

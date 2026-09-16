@@ -34,8 +34,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (44.406, 8.899),  # Porto di Genova, center
             "n_supermarkets": 50,
             "n_convenience": 25 ,
-            "warehouse_tw": ("05:30", "13:00"), #("05:00", "18:00"),
-            #"driver_tw": ("06:00", "14:00"),
+            "warehouse_tw": ("05:30", "13:00"),
+            "driver_tw": ("05:30", "13:00"),
+            "break_mins": 45,
+            "driving_before_break_mins": 270,
             "supermarket_delivery_tw": ("06:00", "12:00"),
             "convenience_delivery_tw": ("06:00", "11:00"),
         },
@@ -44,8 +46,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (45.727, 4.840),  # Gerland industrial area
             "n_supermarkets": 0,
             "n_convenience": 85,
-            "warehouse_tw": ("05:30", "12:30"), #("05:00", "18:00"),
-            #"driver_tw": ("05:30", "15:30"),
+            "warehouse_tw": ("05:30", "12:30"),
+            "driver_tw": ("05:30", "12:30"),
+            "break_mins": 45,
+            "driving_before_break_mins": 270,
             "supermarket_delivery_tw": ("06:00", "11:30"),
             "convenience_delivery_tw": ("06:00", "11:30"),
         },
@@ -54,8 +58,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (35.437, -97.653),  # OKC Logistics park
             "n_supermarkets": 20,
             "n_convenience": 40,
-            "warehouse_tw": ("05:30", "19:00"), #("05:00", "20:00"),
-            #"driver_tw": ("06:00", "16:00"),
+            "warehouse_tw": ("05:30", "19:00"),
+            "driver_tw": ("05:30", "19:00"),
+            "break_mins": 30,
+            "driving_before_break_mins": 480,
             "supermarket_delivery_tw": ("06:00", "15:00"),
             "convenience_delivery_tw": ("06:00", "18:00"),
         },
@@ -64,8 +70,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (43.592, 16.579),  # Dugopolje industrial zone
             "n_supermarkets": 50,
             "n_convenience": 0,
-            "warehouse_tw": ("05:00", "11:00"), #("05:00", "14:00"),
-            #"driver_tw": ("05:00", "13:00"),
+            "warehouse_tw": ("05:00", "11:00"),
+            "driver_tw": ("05:00", "11:00"),
+            "break_mins": 45,
+            "driving_before_break_mins": 270,
             "supermarket_delivery_tw": ("05:30", "10:00"),
             "convenience_delivery_tw": ("05:30", "10:00"),
         },
@@ -76,8 +84,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (45.800, 15.878),  # Jankomir logistics & warehouse zone
             "n_supermarkets": 0,
             "n_convenience": 170,
-            "warehouse_tw": ("05:30", "13:00"), #("05:00", "18:00"),
-            #"driver_tw": ("05:30", "13:30"),
+            "warehouse_tw": ("05:30", "13:00"),
+            "driver_tw": ("05:30", "13:00"),
+            "break_mins": 45,
+            "driving_before_break_mins": 270,
             "supermarket_delivery_tw": ("06:00", "12:00"),
             "convenience_delivery_tw": ("06:00", "12:00"),
         },
@@ -86,8 +96,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (-15.793, -47.971),  # Cidade do Automóvel - main logistics area
             "n_supermarkets": 100,
             "n_convenience": 0,
-            "warehouse_tw": ("05:30", "15:00"), #("06:00", "18:00"),
-            #"driver_tw": ("06:00", "16:00"),
+            "warehouse_tw": ("05:30", "15:00"),
+            "driver_tw": ("05:30", "15:00"),
+            "break_mins": 30,
+            "driving_before_break_mins": 330,
             "supermarket_delivery_tw": ("06:00", "14:00"),
             "convenience_delivery_tw": ("06:00", "14:00"),
         },
@@ -96,8 +108,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (55.657, 12.420),  # Brøndby industrial area
             "n_supermarkets": 100,
             "n_convenience": 50,
-            "warehouse_tw": ("05:00", "12:00"), #("05:00", "17:00"),
-            #"driver_tw": ("05:00", "14:00"),
+            "warehouse_tw": ("05:00", "12:00"),
+            "driver_tw": ("05:00", "12:00"),
+            "break_mins": 45,
+            "driving_before_break_mins": 270,
             "supermarket_delivery_tw": ("05:30", "11:00"),
             "convenience_delivery_tw": ("05:30", "10:30"),
         },
@@ -106,8 +120,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (51.439, 7.092),  # Duisburg Logport
             "n_supermarkets": 40,
             "n_convenience": 80,
-            "warehouse_tw": ("04:30", "15:00"), #("04:00", "22:00"),
-            #"driver_tw": ("05:00", "14:00"),
+            "warehouse_tw": ("04:30", "15:00"),
+            "driver_tw": ("04:30", "15:00"),
+            "break_mins": 45,
+            "driving_before_break_mins": 270,
             "supermarket_delivery_tw": ("05:00", "12:30"),
             "convenience_delivery_tw": ("05:00", "14:00"),
         },
@@ -118,8 +134,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (1.319, 103.869),  # Kallang / Central-East logistics
             "n_supermarkets": 200,
             "n_convenience": 0,
-            "warehouse_tw": ("05:30", "14:30"), #("00:00", "23:59"),
-            #"driver_tw": ("06:00", "15:00"),
+            "warehouse_tw": ("05:30", "14:30"),
+            "driver_tw": ("05:30", "14:30"),
+            "break_mins": 60,
+            "driving_before_break_mins": 300,
             "supermarket_delivery_tw": ("06:00", "13:30"),
             "convenience_delivery_tw": ("06:00", "13:30"),
         },
@@ -128,8 +146,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (-37.835, 144.740),  # Laverton North / Truganina logistics hub
             "n_supermarkets": 113,
             "n_convenience": 227,
-            "warehouse_tw": ("05:30", "18:00"), #("06:00", "18:00"),
-            #"driver_tw": ("06:00", "15:00"),
+            "warehouse_tw": ("05:30", "18:00"),
+            "driver_tw": ("05:30", "18:00"),
+            "break_mins": 60,
+            "driving_before_break_mins": 510,  # Real constraint is more complex
             "supermarket_delivery_tw": ("06:00", "15:00"),
             "convenience_delivery_tw": ("06:00", "17:00"),
         },
@@ -138,8 +158,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (29.993, 31.476),  # New Cairo Industrial Area
             "n_supermarkets": 160,
             "n_convenience": 80,
-            "warehouse_tw": ("05:30", "17:00"), #("06:00", "18:00"),
-            #"driver_tw": ("06:00", "14:00"),
+            "warehouse_tw": ("05:30", "17:00"),
+            "driver_tw": ("05:30", "17:00"),
+            "break_mins": 60,
+            "driving_before_break_mins": 300,
             "supermarket_delivery_tw": ("06:00", "16:00"),
             "convenience_delivery_tw": ("06:00", "15:30"),
         },
@@ -148,8 +170,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (37.650, -122.397),  # East of 101 industrial and logistics area (South San Francisco)
             "n_supermarkets": 0,
             "n_convenience": 300,
-            "warehouse_tw": ("05:30", "17:30"), #("00:00", "23:59"),
-            #"driver_tw": ("05:00", "14:00"),
+            "warehouse_tw": ("05:30", "17:30"),
+            "driver_tw": ("05:30", "17:30"),
+            "break_mins": 30,
+            "driving_before_break_mins": 480,
             "supermarket_delivery_tw": ("06:00", "16:30"),
             "convenience_delivery_tw": ("06:00", "16:30"),
         },
@@ -160,8 +184,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (51.523, 0.142),  # Thames Gateway industrial zone
             "n_supermarkets": 0,
             "n_convenience": 1000,
-            "warehouse_tw": ("06:00", "14:00"), #("00:00", "23:59"),
-            #"driver_tw": ("06:00", "15:00"),
+            "warehouse_tw": ("06:00", "14:00"),
+            "driver_tw": ("06:00", "14:00"),
+            "break_mins": 45,
+            "driving_before_break_mins": 270,
             "supermarket_delivery_tw": ("06:30", "13:00"),
             "convenience_delivery_tw": ("06:30", "13:00"),
         },
@@ -170,8 +196,10 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "depot": (41.085, 28.793),  # Ikitelli Organized Industrial Zone
             "n_supermarkets": 400,
             "n_convenience": 0,
-            "warehouse_tw": ("04:30", "14:00"), #("05:00", "20:00"),
-            #"driver_tw": ("05:00", "14:00"),
+            "warehouse_tw": ("04:30", "14:00"),
+            "driver_tw": ("04:30", "14:00"),
+            "break_mins": 45,
+            "driving_before_break_mins": 270,
             "supermarket_delivery_tw": ("05:00", "13:00"),
             "convenience_delivery_tw": ("05:00", "13:00"),
         },
@@ -181,7 +209,9 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "n_supermarkets": 267,
             "n_convenience": 533,
             "warehouse_tw": ("04:30", "15:00"), #("00:00", "23:59"),
-            #"driver_tw": ("05:00", "14:00"),
+            "driver_tw": ("04:30", "15:00"),
+            "break_mins": 30,
+            "driving_before_break_mins": 300,
             "supermarket_delivery_tw": ("05:00", "14:00"),
             "convenience_delivery_tw": ("05:00", "13:30"),
         },
@@ -191,7 +221,9 @@ def select_input_cities(cities_to_select=None, parameters_to_return=None):
             "n_supermarkets": 400,
             "n_convenience": 200,
             "warehouse_tw": ("05:30", "19:00"), #("00:00", "23:59"),
-            #"driver_tw": ("06:00", "16:00"),
+            "driver_tw": ("05:30", "19:00"),
+            "break_mins": 20,
+            "driving_before_break_mins": 240,
             "supermarket_delivery_tw": ("06:00", "15:30"),
             "convenience_delivery_tw": ("06:00", "18:00"),
         }
@@ -237,6 +269,7 @@ def generate_locations_osm(cities, generate_map=True):
 
         # --- Build dataset ---
         dataset = _build_dataset(cfg, sm_sample, cv_sample, sm_demands, cv_demands, wh_tw, sm_tw, cv_tw)
+        dataset = _add_sdvrp_demands(dataset, seed=seed)
 
         # --- Save JSON ---
         out_json = os.path.join(city_dir, FILES["locations"])
@@ -247,6 +280,44 @@ def generate_locations_osm(cities, generate_map=True):
         # --- Optional map ---
         if generate_map:
             _save_map(city, city_dir, dataset, center_lat, center_lon)
+
+
+def generate_all_locations_osm(cities, generate_map=True):
+    os.makedirs(DATA_PATH, exist_ok=True)
+
+    for city, cfg in cities.items():
+        print(f"\n=== {city} ===")
+        city_dir = os.path.join(DATA_PATH, city)
+        os.makedirs(city_dir, exist_ok=True)
+
+        wh_tw = _hhmm_to_sec_tuple(cfg["warehouse_tw"])
+        sm_tw = _hhmm_to_sec_tuple(cfg["supermarket_delivery_tw"])
+        cv_tw = _hhmm_to_sec_tuple(cfg["convenience_delivery_tw"])
+
+        # --- Fetch POIs ---
+        sm_sample, cv_sample, center_lat, center_lon = _fetch_pois(cfg)
+
+        # --- Generate demands ---
+        seed = cfg['n_supermarkets'] + cfg['n_convenience']
+        sm_demands = _generate_demands(len(sm_sample), 6, 0.6, 2.5, 14, 0.5, seed)
+        cv_demands = _generate_demands(len(cv_sample), 1.5, 0.6, 0.5, 3.5, 0.5, seed)
+
+        # --- Build dataset ---
+        dataset = _build_dataset(cfg, sm_sample, cv_sample, sm_demands, cv_demands, wh_tw, sm_tw, cv_tw)
+        dataset = _add_sdvrp_demands(dataset, seed=seed)
+
+        # --- Save JSON ---
+        out_json = os.path.join(city_dir, FILES["all_available_locations"])
+        with open(out_json, "w", encoding="utf-8") as f:
+            json.dump(dataset, f, indent=2)
+        print(f"Saved dataset: {out_json}")
+
+        # --- Optional map ---
+        if generate_map:
+            _save_map(city, city_dir, dataset, center_lat, center_lon, map_filename="all_available_locations_map.html")
+
+
+
 
 
 # ------------------------------------------------------------------
@@ -290,6 +361,7 @@ def _build_dataset(cfg, sm_sample, cv_sample, sm_demands, cv_demands, wh_tw, sm_
     # --- Depot ---
     depot_lat, depot_lon = cfg["depot"]
     dataset.append({
+        "id": 0,
         "x_coor": depot_lon,
         "y_coor": depot_lat,
         "demand": 0,
@@ -301,6 +373,7 @@ def _build_dataset(cfg, sm_sample, cv_sample, sm_demands, cv_demands, wh_tw, sm_
     # --- Supermarkets ---
     for (_, row), demand in zip(sm_sample.iterrows(), sm_demands):
         dataset.append({
+            "id": len(dataset),
             "x_coor": row.geometry.x,
             "y_coor": row.geometry.y,
             "demand": demand,
@@ -312,6 +385,7 @@ def _build_dataset(cfg, sm_sample, cv_sample, sm_demands, cv_demands, wh_tw, sm_
     # --- Convenience ---
     for (_, row), demand in zip(cv_sample.iterrows(), cv_demands):
         dataset.append({
+            "id": len(dataset),
             "x_coor": row.geometry.x,
             "y_coor": row.geometry.y,
             "demand": demand,
@@ -323,16 +397,56 @@ def _build_dataset(cfg, sm_sample, cv_sample, sm_demands, cv_demands, wh_tw, sm_
     return dataset
 
 
-def _save_map(city, city_dir, dataset, center_lat, center_lon):
+def _add_sdvrp_demands(dataset, seed=100):
+    # Increases demand for ~10% of the highest-demand 40% of each customer type by a 
+    # random factor of 1.5–2.5. Also calculates service_time_sdvrp from demand_sdvrp.
+    # First copy the original demand/service_time to SDVRP fields.
+    for index, point in enumerate(dataset):
+        ordered_point = {}
+        for key, value in point.items():
+            ordered_point[key] = value
+            if key == "demand":
+                ordered_point["demand_sdvrp"] = value
+            if key == "service_time":
+                ordered_point["service_time_sdvrp"] = value
+        dataset[index] = ordered_point
+
+    rng = np.random.default_rng(seed)
+
+    for location_type in ("supermarket", "convenience"):
+        type_indices = [i for i, point in enumerate(dataset) if point["location_type"] == location_type]
+        if not type_indices:
+            continue
+
+        type_indices.sort(key=lambda i: dataset[i]["demand"], reverse=True)
+        n_top = max(1, int(np.ceil(len(type_indices) * 0.40)))
+        n_selected = max(1, int(np.ceil(len(type_indices) * 0.10)))
+        selected_indices = rng.choice(type_indices[:n_top], size=n_selected, replace=False)
+
+        for index in selected_indices:
+            multiplier = rng.uniform(1.5, 2.5)
+            # SDVRP demand
+            dataset[index]["demand_sdvrp"] = (round(dataset[index]["demand"] * multiplier / 0.5) * 0.5)
+            # SDVRP service time
+            demand_sdvrp = dataset[index]["demand_sdvrp"]
+            if location_type == "supermarket":
+                dataset[index]["service_time_sdvrp"] = int(5 * 60 + demand_sdvrp * 120)
+            elif location_type == "convenience":
+                dataset[index]["service_time_sdvrp"] = int(5 * 60 + demand_sdvrp * 90)
+
+    return dataset
+
+
+def _save_map(city, city_dir, dataset, center_lat, center_lon, map_filename="locations_map.html"):
     m = folium.Map(
         location=[center_lat, center_lon],
         zoom_start=11,
         tiles="cartodbpositron"
     )
 
-    for idx, p in enumerate(dataset):
+    for p in dataset:
         tooltip_text = (
-            f"ID: {idx} | "
+            f"ID: {p['id']} | "
             f"Type: {p['location_type']} | "
             f"Demand: {p['demand']} | "
             f"TW: {p['time_window']} | "
@@ -355,7 +469,7 @@ def _save_map(city, city_dir, dataset, center_lat, center_lon):
                 tooltip=tooltip_text
             ).add_to(m)
 
-    out_map = os.path.join(city_dir, "maps", "locations_map.html")
+    out_map = os.path.join(city_dir, "maps", map_filename)
     os.makedirs(os.path.dirname(out_map), exist_ok=True)
     m.save(out_map)
     print(f"Saved locations map: {out_map}")
@@ -377,38 +491,46 @@ def _generate_demands(n_points=100_000, mean=8.0, sigma=0.5, min_demand=0.5, max
 # --- Vehicles generator ---
 # ------------------------------------------------------------------
 
-def generate_vehicles(city, heterogeneous=False, capacity=18, buffer=1.4):
-    dataset_path = os.path.join(DATA_PATH, city, FILES["locations"])
-    out_json = os.path.join(DATA_PATH, city, FILES["vehicles_hvrp"] if heterogeneous else FILES["vehicles"])
-    total_demand = _compute_total_demand(dataset_path)
+def generate_vehicles(cities, capacity=18, buffer=1.4):
+    for city, cfg in cities.items():
+        dataset_path = os.path.join(DATA_PATH, city, FILES["locations"])
+        out_json = os.path.join(DATA_PATH, city, FILES["vehicles"])
+        total_demand = _compute_total_demand(dataset_path)
+        driver_tw = _hhmm_to_sec_tuple(cfg["driver_tw"])
 
-    # --- Vehicle pattern ---
-    large_dominant = city not in ["Lyon", "Oklahoma City", "Zagreb", "Melbourne", "London", "Tokyo"]
-    if not heterogeneous:
-        pattern = [capacity]
-    else:
+        # --- Vehicle pattern ---
+        large_dominant = city not in ["Lyon", "Oklahoma City", "Zagreb", "Melbourne", "London", "Tokyo"]
         pattern = (
             [8]*1 + [18]*2 + [26]*2     # Big vehicles dominant
             if large_dominant else
             [8]*2 + [18]*2 + [26]*1     # Small vehicles dominant
         )
 
-    # --- Build fleet ---
-    vehicles = []
-    total_capacity = 0
-    vehicle_id = 0
+        # --- Build fleet ---
+        vehicles = []
+        total_capacity = 0
+        vehicle_id = 0
 
-    while total_capacity < total_demand * buffer:
-        for cap in pattern:
-            vehicles.append({"id": vehicle_id, "capacity": cap})
-            total_capacity += cap
-            vehicle_id += 1
-            if total_capacity >= total_demand * buffer:
-                break
+        while total_capacity < total_demand * buffer:
+            for hvrp_capacity in pattern:
+                vehicles.append({
+                    "id": vehicle_id,
+                    "capacity": capacity,
+                    "hvrp_capacity": hvrp_capacity,
+                    "driver_tw": list(driver_tw),
+                    "break_mins": cfg["break_mins"],
+                    "driving_before_break_mins": cfg["driving_before_break_mins"]
+                })
+                total_capacity += hvrp_capacity
+                vehicle_id += 1
+                if total_capacity >= total_demand * buffer:
+                    break
 
-    # --- Save JSON ---
-    with open(out_json, "w", encoding="utf-8") as f:
-        json.dump(vehicles, f, indent=2)
+        # --- Save JSON ---
+        with open(out_json, "w", encoding="utf-8") as f:
+            json.dump(vehicles, f, indent=2)
+        print(f"Saved vehicles to: {out_json}")
+
 
 
 def _compute_total_demand(dataset_path):

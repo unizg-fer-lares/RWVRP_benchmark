@@ -1,42 +1,134 @@
 [
   {
     "id": 0,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   },
   {
     "id": 1,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   },
   {
     "id": 2,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   },
   {
     "id": 3,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   },
   {
     "id": 4,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   },
   {
     "id": 5,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   },
   {
     "id": 6,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   },
   {
     "id": 7,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   },
   {
     "id": 8,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   },
   {
     "id": 9,
-    "capacity": 18
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
+  },
+  {
+    "id": 10,
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
+  },
+  {
+    "id": 11,
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      45000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   }
 ]
