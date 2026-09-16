@@ -14,7 +14,8 @@ Extra large (XL) instances: "London", "Istanbul", "Mexico City Metro", "Greater 
 """
 
 def generate_benchmark():
-    city_names = ["Genoa"]
+    city_names = ["Genoa", "Lyon", "Greater Oklahoma City", "Central Dalmatia", "Zagreb", "Brasilia", "Greater Copenhagen", "Ruhr Area",
+                  "Singapore", "Melbourne", "Greater Cairo", "SF Bay Area", "London", "Istanbul", "Mexico City Metro", "Greater Bay Area"]
     #city_names = ["Genoa", "Lyon", "Greater Oklahoma City", "Central Dalmatia", "Zagreb", "Brasilia", "Greater Copenhagen", "Ruhr Area"]
     #city_names = ["Singapore", "Melbourne", "Greater Cairo", "SF Bay Area", "London", "Istanbul", "Mexico City Metro", "Greater Bay Area"]
 
