@@ -18,14 +18,14 @@
     "x_coor": 12.5727309,
     "y_coor": 55.6601982,
     "demand": 10.0,
-    "demand_sdvrp": 10.0,
+    "demand_sdvrp": 14.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1500,
-    "service_time_sdvrp": 1500
+    "service_time_sdvrp": 2040
   },
   {
     "id": 2,
@@ -46,28 +46,28 @@
     "x_coor": 12.5931249,
     "y_coor": 55.6725713,
     "demand": 9.5,
-    "demand_sdvrp": 23.5,
+    "demand_sdvrp": 9.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1440,
-    "service_time_sdvrp": 3120
+    "service_time_sdvrp": 1440
   },
   {
     "id": 4,
     "x_coor": 12.5673408,
     "y_coor": 55.6752949,
     "demand": 7.5,
-    "demand_sdvrp": 7.5,
+    "demand_sdvrp": 12.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1200,
-    "service_time_sdvrp": 1200
+    "service_time_sdvrp": 1800
   },
   {
     "id": 5,
@@ -88,28 +88,28 @@
     "x_coor": 12.5142782,
     "y_coor": 55.660996,
     "demand": 5.5,
-    "demand_sdvrp": 11.5,
+    "demand_sdvrp": 5.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 960,
-    "service_time_sdvrp": 1680
+    "service_time_sdvrp": 960
   },
   {
     "id": 7,
     "x_coor": 12.3329315,
     "y_coor": 55.6612188,
     "demand": 11.5,
-    "demand_sdvrp": 25.5,
+    "demand_sdvrp": 11.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1680,
-    "service_time_sdvrp": 3360
+    "service_time_sdvrp": 1680
   },
   {
     "id": 8,
@@ -242,14 +242,14 @@
     "x_coor": 12.5055762,
     "y_coor": 55.7686975,
     "demand": 14.0,
-    "demand_sdvrp": 29.5,
+    "demand_sdvrp": 14.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1980,
-    "service_time_sdvrp": 3840
+    "service_time_sdvrp": 1980
   },
   {
     "id": 18,
@@ -522,14 +522,14 @@
     "x_coor": 12.517567,
     "y_coor": 55.6528512,
     "demand": 5.5,
-    "demand_sdvrp": 5.5,
+    "demand_sdvrp": 9.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 960,
-    "service_time_sdvrp": 960
+    "service_time_sdvrp": 1380
   },
   {
     "id": 38,
@@ -564,14 +564,14 @@
     "x_coor": 12.543338,
     "y_coor": 55.6687623,
     "demand": 5.0,
-    "demand_sdvrp": 5.0,
+    "demand_sdvrp": 8.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 900,
-    "service_time_sdvrp": 900
+    "service_time_sdvrp": 1260
   },
   {
     "id": 41,
@@ -606,14 +606,14 @@
     "x_coor": 12.5862272,
     "y_coor": 55.6846879,
     "demand": 9.5,
-    "demand_sdvrp": 23.0,
+    "demand_sdvrp": 9.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1440,
-    "service_time_sdvrp": 3060
+    "service_time_sdvrp": 1440
   },
   {
     "id": 44,
@@ -704,14 +704,14 @@
     "x_coor": 12.9838179,
     "y_coor": 55.6156836,
     "demand": 12.5,
-    "demand_sdvrp": 12.5,
+    "demand_sdvrp": 22.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1800,
-    "service_time_sdvrp": 1800
+    "service_time_sdvrp": 3000
   },
   {
     "id": 51,
@@ -732,14 +732,14 @@
     "x_coor": 12.560002,
     "y_coor": 55.7136668,
     "demand": 6.5,
-    "demand_sdvrp": 15.0,
+    "demand_sdvrp": 10.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1080,
-    "service_time_sdvrp": 2100
+    "service_time_sdvrp": 1560
   },
   {
     "id": 53,
@@ -788,14 +788,14 @@
     "x_coor": 13.0064731,
     "y_coor": 55.5863816,
     "demand": 4.0,
-    "demand_sdvrp": 4.0,
+    "demand_sdvrp": 8.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 780,
-    "service_time_sdvrp": 780
+    "service_time_sdvrp": 1260
   },
   {
     "id": 57,
@@ -928,42 +928,42 @@
     "x_coor": 12.5182884,
     "y_coor": 55.7514688,
     "demand": 4.0,
-    "demand_sdvrp": 4.0,
+    "demand_sdvrp": 7.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 780,
-    "service_time_sdvrp": 780
+    "service_time_sdvrp": 1140
   },
   {
     "id": 67,
     "x_coor": 12.5619689,
     "y_coor": 55.6773937,
     "demand": 3.0,
-    "demand_sdvrp": 3.0,
+    "demand_sdvrp": 29.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 660,
-    "service_time_sdvrp": 660
+    "service_time_sdvrp": 3780
   },
   {
     "id": 68,
     "x_coor": 12.5158229,
     "y_coor": 55.7337161,
     "demand": 7.0,
-    "demand_sdvrp": 15.0,
+    "demand_sdvrp": 7.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1140,
-    "service_time_sdvrp": 2100
+    "service_time_sdvrp": 1140
   },
   {
     "id": 69,
@@ -984,28 +984,28 @@
     "x_coor": 13.2426153,
     "y_coor": 55.6945284,
     "demand": 3.0,
-    "demand_sdvrp": 3.0,
+    "demand_sdvrp": 29.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 660,
-    "service_time_sdvrp": 660
+    "service_time_sdvrp": 3780
   },
   {
     "id": 71,
     "x_coor": 12.505754,
     "y_coor": 55.7051799,
     "demand": 8.5,
-    "demand_sdvrp": 16.0,
+    "demand_sdvrp": 8.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1320,
-    "service_time_sdvrp": 2220
+    "service_time_sdvrp": 1320
   },
   {
     "id": 72,
@@ -1054,14 +1054,14 @@
     "x_coor": 12.5616054,
     "y_coor": 55.7098215,
     "demand": 12.5,
-    "demand_sdvrp": 12.5,
+    "demand_sdvrp": 25.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1800,
-    "service_time_sdvrp": 1800
+    "service_time_sdvrp": 3300
   },
   {
     "id": 76,
@@ -1082,14 +1082,14 @@
     "x_coor": 12.9876603,
     "y_coor": 55.6079692,
     "demand": 5.5,
-    "demand_sdvrp": 5.5,
+    "demand_sdvrp": 9.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 960,
-    "service_time_sdvrp": 960
+    "service_time_sdvrp": 1380
   },
   {
     "id": 78,
@@ -1208,14 +1208,14 @@
     "x_coor": 12.5468164,
     "y_coor": 55.655436,
     "demand": 5.0,
-    "demand_sdvrp": 5.0,
+    "demand_sdvrp": 10.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 900,
-    "service_time_sdvrp": 900
+    "service_time_sdvrp": 1500
   },
   {
     "id": 87,
@@ -1236,42 +1236,42 @@
     "x_coor": 13.0892851,
     "y_coor": 55.6413425,
     "demand": 3.5,
-    "demand_sdvrp": 3.5,
+    "demand_sdvrp": 29.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 720,
-    "service_time_sdvrp": 720
+    "service_time_sdvrp": 3840
   },
   {
     "id": 89,
     "x_coor": 12.4706777,
     "y_coor": 55.7125101,
     "demand": 7.0,
-    "demand_sdvrp": 14.0,
+    "demand_sdvrp": 7.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1140,
-    "service_time_sdvrp": 1980
+    "service_time_sdvrp": 1140
   },
   {
     "id": 90,
     "x_coor": 12.6093214,
     "y_coor": 55.6557841,
     "demand": 3.5,
-    "demand_sdvrp": 3.5,
+    "demand_sdvrp": 29.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 720,
-    "service_time_sdvrp": 720
+    "service_time_sdvrp": 3840
   },
   {
     "id": 91,
@@ -1334,14 +1334,14 @@
     "x_coor": 12.5759249,
     "y_coor": 55.7090723,
     "demand": 3.5,
-    "demand_sdvrp": 3.5,
+    "demand_sdvrp": 29.5,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 720,
-    "service_time_sdvrp": 720
+    "service_time_sdvrp": 3840
   },
   {
     "id": 96,
@@ -1376,14 +1376,14 @@
     "x_coor": 12.6072789,
     "y_coor": 55.6684961,
     "demand": 8.0,
-    "demand_sdvrp": 17.5,
+    "demand_sdvrp": 8.0,
     "location_type": "supermarket",
     "time_window": [
       19800,
       39600
     ],
     "service_time": 1260,
-    "service_time_sdvrp": 2400
+    "service_time_sdvrp": 1260
   },
   {
     "id": 99,
@@ -1446,14 +1446,14 @@
     "x_coor": 13.008522,
     "y_coor": 55.5954494,
     "demand": 2.5,
-    "demand_sdvrp": 4.0,
+    "demand_sdvrp": 2.5,
     "location_type": "convenience",
     "time_window": [
       19800,
       37800
     ],
     "service_time": 525,
-    "service_time_sdvrp": 660
+    "service_time_sdvrp": 525
   },
   {
     "id": 104,
@@ -1474,14 +1474,14 @@
     "x_coor": 12.4367609,
     "y_coor": 55.7118744,
     "demand": 1.5,
-    "demand_sdvrp": 2.5,
+    "demand_sdvrp": 1.5,
     "location_type": "convenience",
     "time_window": [
       19800,
       37800
     ],
     "service_time": 435,
-    "service_time_sdvrp": 525
+    "service_time_sdvrp": 435
   },
   {
     "id": 106,
@@ -1670,14 +1670,14 @@
     "x_coor": 12.540164,
     "y_coor": 55.670064,
     "demand": 1.5,
-    "demand_sdvrp": 3.0,
+    "demand_sdvrp": 1.5,
     "location_type": "convenience",
     "time_window": [
       19800,
       37800
     ],
     "service_time": 435,
-    "service_time_sdvrp": 570
+    "service_time_sdvrp": 435
   },
   {
     "id": 120,
@@ -1712,14 +1712,14 @@
     "x_coor": 12.5441642,
     "y_coor": 55.7006063,
     "demand": 1.5,
-    "demand_sdvrp": 3.5,
+    "demand_sdvrp": 1.5,
     "location_type": "convenience",
     "time_window": [
       19800,
       37800
     ],
     "service_time": 435,
-    "service_time_sdvrp": 615
+    "service_time_sdvrp": 435
   },
   {
     "id": 123,
@@ -1768,14 +1768,14 @@
     "x_coor": 12.5426035,
     "y_coor": 55.6641007,
     "demand": 2.0,
-    "demand_sdvrp": 3.5,
+    "demand_sdvrp": 2.0,
     "location_type": "convenience",
     "time_window": [
       19800,
       37800
     ],
     "service_time": 480,
-    "service_time_sdvrp": 615
+    "service_time_sdvrp": 480
   },
   {
     "id": 127,

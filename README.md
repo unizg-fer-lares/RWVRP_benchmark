@@ -41,7 +41,7 @@ The dataset provides the following **variant combinations**:
 
 **Note:**  
 The benchmark is designed to be **flexible and application-driven**, meaning users are not expected to evaluate all instances. Instead, it is recommended to select subsets of instances that best match the target real-world scenario (e.g., problem size, demand structure, and city topology). Some variants require other variants to be present (SiDVRP requires HVRP, VRPDB requires MTVRP).
-Travel times are generated using OpenStreetMap data combined with a commercial routing API. More accurate travel-time estimation may require access to commercial traffic data sources.
+Travel times are generated using OpenStreetMap data combined with a commercial routing API. Travel time accuracy is 81.9%-83.7% (tested on Zagreb instances). More accurate travel-time estimation may require access to commercial traffic data sources.
 
 
 # Cities Included in the Dataset

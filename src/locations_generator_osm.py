@@ -398,9 +398,24 @@ def _build_dataset(cfg, sm_sample, cv_sample, sm_demands, cv_demands, wh_tw, sm_
 
 
 def _add_sdvrp_demands(dataset, seed=100):
-    # Increases demand for ~10% of the highest-demand 40% of each customer type by a 
-    # random factor of 1.5–2.5. Also calculates service_time_sdvrp from demand_sdvrp.
-    # First copy the original demand/service_time to SDVRP fields.
+    """Creates SDVRP demands while preserving the original demand distribution for the large majority of customers.
+    Demand modifications:
+        - 90% remain unchanged.
+        - 7% are selected from the highest-demand 50% and multiplied
+          by a random factor in [1.2, 2.0].
+        - 3% are selected from the lowest-demand 50% and receive a
+          fixed additive increase:
+              * supermarket: +26
+              * convenience: +18
+    The targeted 3% are selected globally, with preference for supermarkets. At least one targeted customer is guaranteed if the dataset contains an eligible customer.
+    All SDVRP demands are rounded to the nearest 0.5."""
+
+    rng = np.random.default_rng(seed)
+    n = len(dataset)
+    if n == 0:
+        return dataset
+
+    # Initialize SDVRP fields with original values
     for index, point in enumerate(dataset):
         ordered_point = {}
         for key, value in point.items():
@@ -411,28 +426,61 @@ def _add_sdvrp_demands(dataset, seed=100):
                 ordered_point["service_time_sdvrp"] = value
         dataset[index] = ordered_point
 
-    rng = np.random.default_rng(seed)
+    # Number of customers in each modification group
+    n_multiplier = int(np.ceil(n * 0.07))
+    n_targeted = int(np.ceil(n * 0.03))
+    n_multiplier = min(n_multiplier, n)
+    n_targeted = min(n_targeted, n - n_multiplier)
 
-    for location_type in ("supermarket", "convenience"):
-        type_indices = [i for i, point in enumerate(dataset) if point["location_type"] == location_type]
-        if not type_indices:
-            continue
+    # Build top-50% and bottom-50% pools
+    sorted_indices = sorted(range(n), key=lambda i: dataset[i]["demand"], reverse=True)
+    n_top = max(1, int(np.ceil(n * 0.50)))
+    top_pool = sorted_indices[:n_top]
+    bottom_pool = sorted_indices[-n_top:]
 
-        type_indices.sort(key=lambda i: dataset[i]["demand"], reverse=True)
-        n_top = max(1, int(np.ceil(len(type_indices) * 0.40)))
-        n_selected = max(1, int(np.ceil(len(type_indices) * 0.10)))
-        selected_indices = rng.choice(type_indices[:n_top], size=n_selected, replace=False)
+    # Select 7% for multiplicative increase
+    multiplier_indices = rng.choice(top_pool, size=min(n_multiplier, len(top_pool)), replace=False)
+    multiplier_indices = set(multiplier_indices)
+    for index in multiplier_indices:
+        original_demand = dataset[index]["demand"]
+        multiplier = rng.uniform(1.2, 2.0)
+        demand_sdvrp = (round(original_demand * multiplier / 0.5) * 0.5)
+        dataset[index]["demand_sdvrp"] = demand_sdvrp
 
-        for index in selected_indices:
-            multiplier = rng.uniform(1.5, 2.5)
-            # SDVRP demand
-            dataset[index]["demand_sdvrp"] = (round(dataset[index]["demand"] * multiplier / 0.5) * 0.5)
-            # SDVRP service time
-            demand_sdvrp = dataset[index]["demand_sdvrp"]
-            if location_type == "supermarket":
-                dataset[index]["service_time_sdvrp"] = int(5 * 60 + demand_sdvrp * 120)
-            elif location_type == "convenience":
-                dataset[index]["service_time_sdvrp"] = int(5 * 60 + demand_sdvrp * 90)
+    # Select 3% targeted customers from bottom 50%, prefer supermarkets.
+    available_bottom = [i for i in bottom_pool if i not in multiplier_indices]
+    supermarket_candidates = [i for i in available_bottom if dataset[i]["location_type"] == "supermarket"]
+    convenience_candidates = [i for i in available_bottom if dataset[i]["location_type"] == "convenience"]
+
+    # Prefer supermarkets. If there are not enough supermarkets, fill the remaining positions with convenience customers.
+    n_targeted_supermarkets = min(n_targeted, len(supermarket_candidates))
+    selected_targeted = []
+
+    if n_targeted_supermarkets > 0:
+        selected_targeted.extend(rng.choice(supermarket_candidates, size=n_targeted_supermarkets, replace=False))
+    remaining = n_targeted - len(selected_targeted)
+    if remaining > 0:
+        remaining_convenience = [i for i in convenience_candidates if i not in selected_targeted]
+        selected_targeted.extend(rng.choice(remaining_convenience, size=remaining, replace=False))
+
+    # Apply targeted additive increases
+    for index in selected_targeted:
+        original_demand = dataset[index]["demand"]
+        if dataset[index]["location_type"] == "supermarket":
+            increment = 26
+        else:
+            increment = 18
+        demand_sdvrp = original_demand + increment
+        demand_sdvrp = (round(demand_sdvrp / 0.5) * 0.5)
+        dataset[index]["demand_sdvrp"] = demand_sdvrp
+
+    # Recalculate SDVRP service times
+    for point in dataset:
+        demand_sdvrp = point["demand_sdvrp"]
+        if point["location_type"] == "supermarket":
+            point["service_time_sdvrp"] = int(5 * 60 + demand_sdvrp * 120)
+        elif point["location_type"] == "convenience":
+            point["service_time_sdvrp"] = int(5 * 60 + demand_sdvrp * 90)
 
     return dataset
 
