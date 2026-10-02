@@ -1,0 +1,24 @@
+[
+  {
+    "id": 0,
+    "capacity": 10,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      18000,
+      54000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
+  },
+  {
+    "id": 1,
+    "capacity": 10,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      18000,
+      54000
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
+  }
+]

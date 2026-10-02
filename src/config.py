@@ -40,6 +40,7 @@ FILES = {
     "representative_points": "representative_points.json",  # delivery points nearest to cluster centroids 
     "vehicles": "vehicles.json",
     "vehicles_hvrp": "vehicles_hvrp.json",
+    "vehicle_location_accessibility": "vehicle_location_accessibility.json",
     "osm_correction_factor": "osm_correction_factor.json",
     "time_matrix_osm": "time_matrix_osm.json",
     "time_matrix_centroids": "time_matrix_centroids.json",
@@ -50,4 +51,6 @@ FILES = {
     "time_matrix_within_clusters_scaled": "time_matrix_within_clusters_scaled.json",
     "time_matrix_tdvrp": "time_matrix_tdvrp.json",
     "time_matrix_static": "time_matrix.json",
+    "time_matrix_hvrp": "time_matrix_hvrp_{capacity}_palets.json",
+    "time_matrix_tdvrp_hvrp": "time_matrix_tdvrp_hvrp_{capacity}_palets.json",
 }

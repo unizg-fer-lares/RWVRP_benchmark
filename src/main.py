@@ -2,6 +2,7 @@ from locations_generator_osm import initialize_folders, select_input_cities, gen
 from divide_into_clusters import divide_into_clusters
 from time_matrix_local import generate_static_time_matrices_osm, generate_full_tdvrp_time_matrix, convert_3d_to_static, generate_heterogeneous_matrices
 from time_matrix_api import generate_td_time_matrix, generate_td_within_clusters, scale_original_td_matrices
+from validate_solution import validate_solutions
 from config import *
 
 
@@ -40,3 +41,4 @@ def generate_benchmark():
 
 if __name__ == "__main__":
     generate_benchmark()
+    #validate_solutions()

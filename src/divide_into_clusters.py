@@ -16,9 +16,12 @@ from config import *
 
 def divide_into_clusters(generate_map=True):
     max_share = 0.2
+    excluded_cities = {"DummyCity"}
     print("Scanning cities in:", DATA_PATH)
 
     for city in os.listdir(DATA_PATH):
+        if city in excluded_cities:
+            continue
         city_dir = os.path.join(DATA_PATH, city)
         if not os.path.isdir(city_dir):
             continue

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 0,
+    "x_coor": 0.0,
+    "y_coor": 0.0,
+    "demand": 0,
+    "location_type": "depot",
+    "time_window": [18000, 54000],
+    "service_time": 100
+  },
+  {
+    "id": 1,
+    "x_coor": 1.0,
+    "y_coor": 0.0,
+    "demand": 3,
+    "location_type": "supermarket",
+    "time_window": [19800, 43200],
+    "service_time": 900
+  },
+  {
+    "id": 2,
+    "x_coor": 2.0,
+    "y_coor": 0.5,
+    "demand": 4,
+    "location_type": "supermarket",
+    "time_window": [21600, 45000],
+    "service_time": 1200
+  },
+  {
+    "id": 3,
+    "x_coor": 0.5,
+    "y_coor": 1.5,
+    "demand": 2,
+    "location_type": "supermarket",
+    "time_window": [19800, 50400],
+    "service_time": 900
+  },
+  {
+    "id": 4,
+    "x_coor": 1.5,
+    "y_coor": 2.0,
+    "demand": 1,
+    "location_type": "supermarket",
+    "time_window": [21600, 52200],
+    "service_time": 600
+  },
+  {
+    "id": 5,
+    "x_coor": 2.5,
+    "y_coor": 1.5,
+    "demand": 3,
+    "location_type": "supermarket",
+    "time_window": [23400, 52200],
+    "service_time": 900
+  },
+  {
+    "id": 6,
+    "x_coor": 3.0,
+    "y_coor": 0.5,
+    "demand": 2,
+    "location_type": "supermarket",
+    "time_window": [23400, 52200],
+    "service_time": 600
+  }
+]

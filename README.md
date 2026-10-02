@@ -41,7 +41,7 @@ The dataset provides the following **variant combinations**:
 
 **Note:**  
 The benchmark is designed to be **flexible and application-driven**, meaning users are not expected to evaluate all instances. Instead, it is recommended to select subsets of instances that best match the target real-world scenario (e.g., problem size, demand structure, and city topology). Some variants require other variants to be present (SiDVRP requires HVRP, VRPDB requires MTVRP).
-Travel times are generated using OpenStreetMap data combined with a commercial routing API. Travel time accuracy is 81.9%-83.7% (tested on Zagreb instances). More accurate travel-time estimation may require access to commercial traffic data sources.
+Travel times are generated using OpenStreetMap data combined with a commercial routing API. More accurate travel-time estimation may require access to commercial traffic data sources.
 
 
 # Cities Included in the Dataset
@@ -151,8 +151,17 @@ Additional files include:
 3) Generate a solution using your VRP algorithm and compare it with the best-known solution for the given instance.
 
 
+## Solution format and variant behavior
+
+A solution names its variant in `instance_name` and lists one route per used vehicle. Each route is a sequence of location IDs starting and ending at depot `0`; intermediate depot visits are allowed only in MTVRP, and repeated customer visits only in SDVRP. In MTVRP, intermediate `0`s mark depot returns between trips; they reset vehicle load, and every depot visit adds its configured service time. HVRP selects a travel matrix by vehicle capacity, TDVRP selects each leg's matrix by departure time, and SiDVRP routes must respect the vehicle-to-location accessibility matrix.
+
+For SDVRP, `demands` is required and aligns with `route`: depot entries are `0`, and customer entries are the quantities delivered on those visits. Split quantities across visits must sum to the customer's `demand_sdvrp`. Unloading is calculated per visit as 5 minutes plus 120 seconds per unit at supermarkets or 90 seconds per unit at convenience stores; each split visit incurs the 5-minute base time. For VRPDB, `breaks_after` contains route indexes where a break is taken after the stop and before the next leg, subject to the vehicle's driving limit.
+
+For VRPDB, `breaks_after` uses zero-based indexes into the route. Validation reports `total_time_consumed` (driving, waiting, service, and breaks), `driving_time` (travel only), and `cost`. Cost is driving time plus 10,000 per used vehicle for variants that include MTVRP.
+
+A more detailed README for solutions, including a small example of an input and its corresponding solution, is available under `data/DummyCity`. The examples can be run from `main.py` using the `validate_solutions` function. This function can also be used by users to validate their own solutions for any city in the benchmark, allowing them to check whether a solution is valid and inspect the resulting validation metrics.
+
+
 # Future work
 
-The authors of this benchmark plan to include a solution evaluator that will:
-- Add solution validator for all instances
-- Store the best-known solutions
+Planned future work includes storing the best-known solutions.

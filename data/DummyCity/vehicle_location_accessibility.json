@@ -1,0 +1,22 @@
+{
+  "type": "vehicle_location_accessibility",
+  "description": "Matrix of vehicle-location accessibility (1=accessible, 0=not accessible)",
+  "num_vehicles": 2,
+  "num_locations": 7,
+  "vehicles": [
+    {
+      "id": 0,
+      "capacity": 10,
+      "hvrp_capacity": 10
+    },
+    {
+      "id": 1,
+      "capacity": 10,
+      "hvrp_capacity": 10
+    }
+  ],
+  "accessibility_matrix": [
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 1, 1, 1, 1, 1]
+  ]
+}

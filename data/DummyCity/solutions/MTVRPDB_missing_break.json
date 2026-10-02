@@ -1,0 +1,11 @@
+{
+  "instance_name": "RW-GE75-MTVRPDB",
+  "routes": [
+    {"vehicle_id": 0, "route": [0, 1, 2, 3, 0], "breaks_after": []},
+    {
+      "vehicle_id": 1,
+      "route": [0, 4, 5, 6, 0],
+      "breaks_after": [3]
+    }
+  ]
+}
