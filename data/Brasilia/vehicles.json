@@ -471,5 +471,126 @@
     ],
     "break_mins": 30,
     "driving_before_break_mins": 330
+  },
+  {
+    "id": 43,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
+  },
+  {
+    "id": 44,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
+  },
+  {
+    "id": 45,
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
+  },
+  {
+    "id": 46,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
+  },
+  {
+    "id": 47,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
+  },
+  {
+    "id": 48,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
+  },
+  {
+    "id": 49,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
+  },
+  {
+    "id": 50,
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
+  },
+  {
+    "id": 51,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
+  },
+  {
+    "id": 52,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
+  },
+  {
+    "id": 53,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      54000
+    ],
+    "break_mins": 30,
+    "driving_before_break_mins": 330
   }
 ]

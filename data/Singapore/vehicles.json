@@ -1010,5 +1010,203 @@
     ],
     "break_mins": 60,
     "driving_before_break_mins": 300
+  },
+  {
+    "id": 92,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 93,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 94,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 95,
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 96,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 97,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 98,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 99,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 100,
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 101,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 102,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 103,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 104,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 105,
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 106,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 107,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 108,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
+  },
+  {
+    "id": 109,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      19800,
+      52200
+    ],
+    "break_mins": 60,
+    "driving_before_break_mins": 300
   }
 ]

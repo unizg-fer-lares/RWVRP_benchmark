@@ -1,4 +1,4 @@
-from locations_generator_osm import initialize_folders, select_input_cities, generate_locations_osm, generate_all_locations_osm, generate_vehicles
+from locations_generator_osm import initialize_folders, select_input_cities, generate_locations_osm, generate_all_locations_osm, generate_vehicles, fix_unfeasible_solutions
 from divide_into_clusters import divide_into_clusters
 from time_matrix_local import generate_static_time_matrices_osm, generate_full_tdvrp_time_matrix, convert_3d_to_static, generate_heterogeneous_matrices
 from time_matrix_api import generate_td_time_matrix, generate_td_within_clusters, scale_original_td_matrices
@@ -30,6 +30,7 @@ def generate_benchmark():
 
     # --- Generate time matrices ---
     #generate_static_time_matrices_osm(city_names)
+    #fix_unfeasible_solutions()
     for city, city_info in cities.items():
         #generate_td_time_matrix(city, city_info)
         #generate_td_within_clusters(city, city_info)

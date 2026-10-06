@@ -317,6 +317,83 @@ def generate_all_locations_osm(cities, generate_map=True):
             _save_map(city, city_dir, dataset, center_lat, center_lon, map_filename="all_available_locations_map.html")
 
 
+def fix_unfeasible_solutions(data_path=DATA_PATH):
+    replacements = []
+
+    for city in sorted(os.listdir(data_path)):
+        city_path = os.path.join(data_path, city)
+        if not os.path.isdir(city_path):
+            continue
+
+        locations_path = os.path.join(city_path, FILES["locations"])
+        accessibility_path = os.path.join(city_path, FILES["vehicle_location_accessibility"])
+        if not os.path.isfile(locations_path) or not os.path.isfile(accessibility_path):
+            print(f"{city}: locations or accessibility JSON not found; skipping.")
+            continue
+
+        with open(locations_path, "r", encoding="utf-8") as locations_file:
+            locations = json.load(locations_file)
+        with open(accessibility_path, "r", encoding="utf-8") as accessibility_file:
+            accessibility = json.load(accessibility_file)
+
+        accessibility_matrix = accessibility["accessibility_matrix"]
+        if len(accessibility_matrix) <= 2:
+            print(f"{city}: no third row in accessibility_matrix; skipping.")
+            continue
+
+        vehicle_accessibility = accessibility_matrix[2]
+        if len(vehicle_accessibility) < len(locations):
+            raise ValueError(
+                f"{city}: third row accessibility_matrix has "
+                f"{len(vehicle_accessibility)} columns for {len(locations)} locations."
+            )
+
+        problematic_indices = [index for index, location in enumerate(locations)
+                               if location.get("demand_sdvrp", 0) > 8 and vehicle_accessibility[index] == 0]
+        if not problematic_indices:
+            print(f"{city}: no problematic locations.")
+            continue
+
+        print(f"{city}: problematic IDs: {[locations[index]['id'] for index in problematic_indices]}")
+
+        city_replacements = []
+        for location_index in problematic_indices:
+            candidate_indices = list(range(location_index + 1, len(locations))) + list(range(location_index - 1, -1, -1))
+
+            replacement_index = next(
+                (index for index in candidate_indices
+                 if locations[index].get("location_type") != "depot" and locations[index].get("demand_sdvrp") is not None
+                 and locations[index]["demand_sdvrp"] <= 8 and vehicle_accessibility[index] != 0),
+                None)
+            if replacement_index is None:
+                print(f"{city}: replacement location not found for ID {locations[location_index]['id']}.")
+                continue
+
+            problem_location = locations[location_index]
+            replacement_location = locations[replacement_index]
+            problem_id = problem_location["id"]
+            replacement_id = replacement_location["id"]
+            problem_parameters = {key: value for key, value in problem_location.items() if key != "id"}
+            replacement_parameters = {key: value for key, value in replacement_location.items() if key != "id"}
+
+            problem_location.clear()
+            problem_location["id"] = problem_id
+            problem_location.update(replacement_parameters)
+            replacement_location.clear()
+            replacement_location["id"] = replacement_id
+            replacement_location.update(problem_parameters)
+
+            city_replacements.append((problem_id, replacement_id))
+            replacements.append((city, problem_id, replacement_id))
+            print(f"{city}: ID {problem_id} was replaced with ID {replacement_id}.")
+
+        if city_replacements:
+            with open(locations_path, "w", encoding="utf-8") as locations_file:
+                json.dump(locations, locations_file, indent=2, ensure_ascii=False)
+                locations_file.write("\n")
+
+    return replacements
+
 
 
 
@@ -543,7 +620,7 @@ def generate_vehicles(cities, capacity=18, buffer=1.4):
     for city, cfg in cities.items():
         dataset_path = os.path.join(DATA_PATH, city, FILES["locations"])
         out_json = os.path.join(DATA_PATH, city, FILES["vehicles"])
-        total_demand = _compute_total_demand(dataset_path)
+        total_demand = _compute_total_sdvrp_demand(dataset_path)
         driver_tw = _hhmm_to_sec_tuple(cfg["driver_tw"])
 
         # --- Vehicle pattern ---
@@ -581,8 +658,8 @@ def generate_vehicles(cities, capacity=18, buffer=1.4):
 
 
 
-def _compute_total_demand(dataset_path):
+def _compute_total_sdvrp_demand(dataset_path):
     with open(dataset_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    return sum(p["demand"] for p in data if p["location_type"] != "depot")
+    return sum(p["demand_sdvrp"] for p in data if p["location_type"] != "depot")

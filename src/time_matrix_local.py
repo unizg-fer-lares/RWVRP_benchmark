@@ -155,7 +155,9 @@ def convert_3d_to_static(city):
 
     data = json.load(open(input_file, "r", encoding="utf-8"))
     matrices = [np.array(v["matrix_seconds"]) for v in data["matrices"].values()]
-    static_matrix = np.mean(matrices, axis=0).round().astype(int).tolist()
+    static_matrix = _normalize_time_matrix(
+        np.mean(matrices, axis=0).round().astype(int)
+    ).tolist()
 
     out = {
         "type": "vrp_static_matrix",
@@ -283,6 +285,7 @@ def generate_full_tdvrp_time_matrix(city):
                 cj = loc_to_cluster_idx[j]
                 T_scaled[i, j] = int(round(T_static[i, j] * osm_correction_factor * scale_matrix[ci, cj]))
 
+        T_scaled = _normalize_time_matrix(T_scaled, T_static)
         output_data["matrices"][snapshot_key] = {
             "depart_iso_utc": tt_centroids_all[snapshot_key]["depart_iso_utc"],
             "matrix_seconds": T_scaled.tolist()
@@ -297,6 +300,14 @@ def generate_full_tdvrp_time_matrix(city):
 # ------------------------------------------------------------------
 # --- Helper functions ---
 # ------------------------------------------------------------------
+
+def _normalize_time_matrix(matrix, *source_matrices):
+    matrix = np.asarray(matrix)
+    unreachable = matrix > 86400
+    for source_matrix in source_matrices:
+        unreachable |= np.asarray(source_matrix) > 86400
+    return np.where(unreachable, 10**9, matrix)
+
 
 def _num(x):
     if x is None:
@@ -499,6 +510,7 @@ def generate_heterogeneous_matrices(city):
 
         # --- VRP matrix ---
         hvrp_matrix = (base_vrp * osm_vehicle / osm_base_safe).round().astype(int)
+        hvrp_matrix = _normalize_time_matrix(hvrp_matrix, base_vrp, osm_vehicle, osm_base)
         hvrp_matrix = hvrp_matrix.tolist()
         hvrp_vrp_data = {
             "type": base_vrp_data["type"],
@@ -518,6 +530,9 @@ def generate_heterogeneous_matrices(city):
         for snapshot_key, snapshot_data in base_tdvrp_data["matrices"].items():
             base_matrix_snap = np.array(snapshot_data["matrix_seconds"], dtype=float)
             hvrp_matrix_snap = (base_matrix_snap * osm_vehicle / osm_base_safe).round().astype(int)
+            hvrp_matrix_snap = _normalize_time_matrix(
+                hvrp_matrix_snap, base_matrix_snap, osm_vehicle, osm_base
+            )
             hvrp_tdvrp_data["matrices"][snapshot_key] = {"depart_iso_utc": snapshot_data["depart_iso_utc"],
                                                          "matrix_seconds": hvrp_matrix_snap.tolist()}
 

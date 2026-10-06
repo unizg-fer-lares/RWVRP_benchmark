@@ -273,5 +273,49 @@
     ],
     "break_mins": 45,
     "driving_before_break_mins": 270
+  },
+  {
+    "id": 25,
+    "capacity": 18,
+    "hvrp_capacity": 8,
+    "driver_tw": [
+      18000,
+      39600
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
+  },
+  {
+    "id": 26,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      18000,
+      39600
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
+  },
+  {
+    "id": 27,
+    "capacity": 18,
+    "hvrp_capacity": 18,
+    "driver_tw": [
+      18000,
+      39600
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
+  },
+  {
+    "id": 28,
+    "capacity": 18,
+    "hvrp_capacity": 26,
+    "driver_tw": [
+      18000,
+      39600
+    ],
+    "break_mins": 45,
+    "driving_before_break_mins": 270
   }
 ]
