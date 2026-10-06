@@ -48,41 +48,43 @@ Travel times are generated using OpenStreetMap data combined with a commercial r
 
 The dataset includes instances generated for cities and regions of different sizes.
 
+
 ## Small (S) instances (50–85 delivery points)
 
-| City / Region       | Instance Name| Type   | Delivery Points | Supermarkets | Convenience | Supermarket TW | Convenience TW |
-|---------------------|--------------|--------|-----------------|--------------|-------------|----------------|----------------|
-| Genoa               | RW-GE75-VRP  | City   | 75              | 50           | 25          | 06:00–12:00    | 06:00–11:00    |
-| Lyon                | RW-LY85-VRP  | City   | 85              | 0            | 85          | —              | 06:00–11:30    |
-| Oklahoma City       | RW-OK60-VRP  | Metro  | 60              | 20           | 40          | 06:00–15:00    | 06:00–18:00    |
-| Central Dalmatia    | RW-CD50-VRP  | Region | 50              | 50           | 0           | 05:30–10:00    | —              |
+| City / Region       | Instance Name| Type   | Delivery Points | Supermarkets | Convenience | Supermarket TW | Convenience TW | Depot/Driver TW | Max Work (min) | Min Break (min) |
+|---------------------|--------------|--------|-----------------|--------------|-------------|----------------|----------------|-----------------|----------------|-----------------|
+| Genoa               | RW-GE75-VRP  | City   | 75              | 50           | 25          | 06:00–12:00    | 06:00–11:00    | 05:30–13:00     | 270            | 45              |
+| Lyon                | RW-LY85-VRP  | City   | 85              | 0            | 85          | —              | 06:00–11:30    | 05:30–12:30     | 270            | 45              |
+| Oklahoma City       | RW-OK60-VRP  | Metro  | 60              | 20           | 40          | 06:00–15:00    | 06:00–18:00    | 05:30–19:00     | 480            | 30              |
+| Central Dalmatia    | RW-CD50-VRP  | Region | 50              | 50           | 0           | 05:30–10:00    | —              | 05:00–11:00     | 270            | 45              |
 
 ## Medium (M) instances (100–170 delivery points)
 
-| City / Region   | Instance Name| Type   | Delivery Points | Supermarkets | Convenience | Supermarket TW | Convenience TW |
-|-----------------|--------------|--------|-----------------|--------------|-------------|----------------|----------------|
-| Zagreb          | RW-ZG170-VRP | City   | 170             | 0            | 170         | —              | 06:00–12:00    |
-| Brasilia        | RW-BR100-VRP | City   | 100             | 100          | 0           | 06:00–14:00    | —              |
-| Copenhagen      | RW-CP150-VRP | Metro  | 150             | 100          | 50          | 05:30–11:00    | 05:30–10:30    |
-| Ruhr Area       | RW-RU120-VRP | Region | 120             | 40           | 80          | 05:00–12:30    | 05:00–14:00    |
+| City / Region   | Instance Name| Type   | Delivery Points | Supermarkets | Convenience | Supermarket TW | Convenience TW | Depot/Driver TW | Max Work (min) | Min Break (min) |
+|-----------------|--------------|--------|-----------------|--------------|-------------|----------------|----------------|-----------------|----------------|-----------------|
+| Zagreb          | RW-ZG170-VRP | City   | 170             | 0            | 170         | —              | 06:00–12:00    | 05:30–13:00     | 270            | 45              |
+| Brasilia        | RW-BR100-VRP | City   | 100             | 100          | 0           | 06:00–14:00    | —              | 05:30–15:00     | 330            | 30              |
+| Copenhagen      | RW-CP150-VRP | Metro  | 150             | 100          | 50          | 05:30–11:00    | 05:30–10:30    | 05:00–12:00     | 270            | 45              |
+| Ruhr Area       | RW-RU120-VRP | Region | 120             | 40           | 80          | 05:00–12:30    | 05:00–14:00    | 04:30–15:00     | 270            | 45              |
 
 ## Large (L) instances (200–340 delivery points)
 
-| City / Region       | Instance Name| Type   | Delivery Points | Supermarkets | Convenience | Supermarket TW | Convenience TW |
-|---------------------|--------------|--------|-----------------|--------------|-------------|----------------|----------------|
-| Singapore           | RW-SG200-VRP | City   | 200             | 200          | 0           | 06:00–13:30    | —              |
-| Melbourne           | RW-ME340-VRP | City   | 340             | 113          | 227         | 06:00–15:00    | 06:00–17:00    |
-| Cairo               | RW-CA240-VRP | Metro  | 240             | 160          | 80          | 06:00–16:00    | 06:00–15:30    |
-| SF Bay Area         | RW-SF300-VRP | Region | 300             | 0            | 300         | —              | 06:00–16:30    |
+| City / Region       | Instance Name| Type   | Delivery Points | Supermarkets | Convenience | Supermarket TW | Convenience TW | Depot/Driver TW | Max Work (min) | Min Break (min) |
+|---------------------|--------------|--------|-----------------|--------------|-------------|----------------|----------------|-----------------|----------------|-----------------|
+| Singapore           | RW-SG200-VRP | City   | 200             | 200          | 0           | 06:00–13:30    | —              | 05:30–14:30     | 300            | 60              |
+| Melbourne           | RW-ME340-VRP | City   | 340             | 113          | 227         | 06:00–15:00    | 06:00–17:00    | 05:30–18:00     | 510            | 60              |
+| Cairo               | RW-CA240-VRP | Metro  | 240             | 160          | 80          | 06:00–16:00    | 06:00–15:30    | 05:30–17:00     | 300            | 60              |
+| SF Bay Area         | RW-SF300-VRP | Region | 300             | 0            | 300         | —              | 06:00–16:30    | 05:30–17:30     | 480            | 30              |
 
 ## Extra Large (XL) instances (400–1000 delivery points)
 
-| City / Region    | Instance Name| Type   | Delivery Points | Supermarkets | Convenience | Supermarket TW | Convenience TW |
-|------------------|--------------|--------|-----------------|--------------|-------------|----------------|----------------|
-| London           | RW-LO1000-VRP| City   | 1000            | 0            | 1000        | —              | 06:30–13:00    |
-| Istanbul         | RW-IS400-VRP | City   | 400             | 400          | 0           | 05:00–13:00    | —              |
-| Mexico City      | RW-MC800-VRP | Metro  | 800             | 267          | 533         | 05:00–14:00    | 05:00–13:30    |
-| Greater Bay Area | RW-GB600-VRP | Region | 600             | 400          | 200         | 06:00–15:30    | 06:00–18:00    |
+| City / Region    | Instance Name| Type   | Delivery Points | Supermarkets | Convenience | Supermarket TW | Convenience TW | Depot/Driver TW | Max Work (min) | Min Break (min) |
+|------------------|--------------|--------|-----------------|--------------|-------------|----------------|----------------|-----------------|----------------|-----------------|
+| London           | RW-LO1000-VRP| City   | 1000            | 0            | 1000        | —              | 06:30–13:00    | 06:00–14:00     | 270            | 45              |
+| Istanbul         | RW-IS400-VRP | City   | 400             | 400          | 0           | 05:00–13:00    | —              | 04:30–14:00     | 270            | 45              |
+| Mexico City      | RW-MC800-VRP | Metro  | 800             | 267          | 533         | 05:00–14:00    | 05:00–13:30    | 04:30–15:00     | 300            | 30              |
+| Greater Bay Area | RW-GB600-VRP | Region | 600             | 400          | 200         | 06:00–15:30    | 06:00–18:00    | 05:30–19:00     | 240            | 20              |
+
 
 
 # Instance Naming Convention
@@ -116,7 +118,7 @@ Within the src/ folder are scripts for dataset generation. Files required to def
 
 Each city folder contains:
 - data/<city>/locations.json – location data used for all VRP variants
-- data/<city>/vehicles.json – vehicle data used for non-HVRP variants
+- data/<city>/vehicles.json – vehicle data used for all VRP variants
 - data/<city>/vehicle_location_accessibility.json – vehicle-to-location accessibility matrix used for SiDVRP
 - data/<city>/time_matrix.json – static time matrix for non-TDVRP variants
 - data/<city>/time_matrix_hvrp_8_palets.json – static time matrix for HVRP vehicles with 8-pallet capacity
