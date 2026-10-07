@@ -373,15 +373,13 @@ def fix_unfeasible_solutions(data_path=DATA_PATH):
             replacement_location = locations[replacement_index]
             problem_id = problem_location["id"]
             replacement_id = replacement_location["id"]
-            problem_parameters = {key: value for key, value in problem_location.items() if key != "id"}
-            replacement_parameters = {key: value for key, value in replacement_location.items() if key != "id"}
-
-            problem_location.clear()
-            problem_location["id"] = problem_id
-            problem_location.update(replacement_parameters)
-            replacement_location.clear()
-            replacement_location["id"] = replacement_id
-            replacement_location.update(problem_parameters)
+            for key in problem_location:
+                if key in {"id", "x_coor", "y_coor"}:
+                    continue
+                problem_location[key], replacement_location[key] = (
+                    replacement_location[key],
+                    problem_location[key],
+                )
 
             city_replacements.append((problem_id, replacement_id))
             replacements.append((city, problem_id, replacement_id))
@@ -393,7 +391,6 @@ def fix_unfeasible_solutions(data_path=DATA_PATH):
                 locations_file.write("\n")
 
     return replacements
-
 
 
 

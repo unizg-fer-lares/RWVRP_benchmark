@@ -2311,8 +2311,8 @@
   },
   {
     "id": 165,
-    "x_coor": 103.7726114,
-    "y_coor": 1.3873727,
+    "x_coor": 103.9637744,
+    "y_coor": 1.3348478,
     "demand": 6.5,
     "demand_sdvrp": 6.5,
     "location_type": "supermarket",
@@ -2325,8 +2325,8 @@
   },
   {
     "id": 166,
-    "x_coor": 103.9637744,
-    "y_coor": 1.3348478,
+    "x_coor": 103.7726114,
+    "y_coor": 1.3873727,
     "demand": 8.0,
     "demand_sdvrp": 13.0,
     "location_type": "supermarket",

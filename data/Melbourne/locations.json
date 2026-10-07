@@ -883,8 +883,8 @@
   },
   {
     "id": 63,
-    "x_coor": 145.0068058,
-    "y_coor": -37.8849415,
+    "x_coor": 145.1566421,
+    "y_coor": -38.1122489,
     "demand": 4.0,
     "demand_sdvrp": 5.5,
     "location_type": "supermarket",
@@ -897,8 +897,8 @@
   },
   {
     "id": 64,
-    "x_coor": 145.1566421,
-    "y_coor": -38.1122489,
+    "x_coor": 145.0068058,
+    "y_coor": -37.8849415,
     "demand": 7.5,
     "demand_sdvrp": 9.0,
     "location_type": "supermarket",
@@ -1527,8 +1527,8 @@
   },
   {
     "id": 109,
-    "x_coor": 145.0923339,
-    "y_coor": -37.8784912,
+    "x_coor": 145.2239491,
+    "y_coor": -37.8175701,
     "demand": 5.0,
     "demand_sdvrp": 5.0,
     "location_type": "supermarket",
@@ -1541,8 +1541,8 @@
   },
   {
     "id": 110,
-    "x_coor": 145.2239491,
-    "y_coor": -37.8175701,
+    "x_coor": 145.0923339,
+    "y_coor": -37.8784912,
     "demand": 11.5,
     "demand_sdvrp": 11.5,
     "location_type": "supermarket",
